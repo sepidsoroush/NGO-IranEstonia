@@ -6,10 +6,12 @@ import Donate from "./pages/Donate" ;
 import Gallery from "./pages/Gallery" ;
 import Home from "./pages/Home" ;
 import Membership from "./pages/Membership" ;
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/donate' element={<Donate />} />
