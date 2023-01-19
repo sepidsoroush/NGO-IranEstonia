@@ -6,7 +6,7 @@ import Donate from "./pages/Donate" ;
 import Gallery from "./pages/Gallery" ;
 import Home from "./pages/Home" ;
 import Membership from "./pages/Membership" ;
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
