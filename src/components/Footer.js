@@ -26,13 +26,13 @@ const Footer = () => {
             <h2>Contact us</h2>
             <ul>
                 <li>
-                    <a href=""><UilFacebookF /></a>
+                    <a href="https://www.facebook.com/freeirangroup"><UilFacebookF /></a>
                 </li>
                 <li>
-                    <a href=""><UilInstagram/></a>
+                    <a href="https://www.instagram.com/freeirangroup/"><UilInstagram/></a>
                 </li>
                 <li>
-                    <a href=""><UilTwitter/></a>
+                    <a href="https://www.instagram.com/freeirangroup/"><UilTwitter/></a>
                 </li>
             </ul>
         </div>
