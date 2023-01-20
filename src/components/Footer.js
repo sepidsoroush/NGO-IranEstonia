@@ -1,4 +1,5 @@
 import React from 'react';
+import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
 
 const Footer = () => {
   return (
@@ -25,13 +26,13 @@ const Footer = () => {
             <h2>Contact us</h2>
             <ul>
                 <li>
-                    <a href="">Facebook</a>
+                    <a href=""><UilFacebookF /></a>
                 </li>
                 <li>
-                    <a href="">Instagram</a>
+                    <a href=""><UilInstagram/></a>
                 </li>
                 <li>
-                    <a href="">Twitter</a>
+                    <a href=""><UilTwitter/></a>
                 </li>
             </ul>
         </div>
