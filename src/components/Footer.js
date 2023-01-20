@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
 
 const Footer = () => {
@@ -12,15 +13,16 @@ const Footer = () => {
             <h2>Main Menu</h2>
             <ul>
                 <li>
-                    <a href="">Home Page</a>
+                    <Link to="/">Home Page</Link>
                 </li>
                 <li>
-                    <a href="">About Us</a>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <a href="">News</a>
+                    <Link to="/gallery">Gallery</Link>
                 </li>
             </ul>
+            <Outlet/>
         </div>
         <div>
             <h2>Contact us</h2>
