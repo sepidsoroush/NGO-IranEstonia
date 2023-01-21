@@ -1,18 +1,20 @@
 import React from 'react';
 import EventsInfo from '../data/EventsInfo';
-// import Slider from "../components/Slider" ;
-import {  Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+
 
 const Events = () => {
+    const navigate = useNavigate();
+
     return (
         <div className='Event-container'>
             {EventsInfo.map((item)=>{
-                const {id , title , description , image} = item;
+                const {id , title , description} = item;
                 return(
                     <div className='event-item' key={id}>
                         <h2 className='event-title'>{title}</h2>
                         <p className='event-description'>{description}</p>
-                        <Link to={`/events/${id}`} className='btn btn-details'>Learn more</Link>
+                        <button onClick={()=>navigate(`/events/${id}`)}  className='btn btn-details'>Learn more</button>
                         
                     </div>
                 )
