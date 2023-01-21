@@ -14,17 +14,17 @@ const Events = () => {
     return (
         <Slide>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[0]})` }}>
+                <div style={{ 'backgroundImage': `url(${images[0]})` , "height" : "50vh" }}>
                     <span>Slide 1</span>
                 </div>
             </div>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[1]})` }}>
+                <div style={{ 'backgroundImage': `url(${images[1]})` , "height" : "50vh" }}>
                     <span>Slide 2</span>
                 </div>
             </div>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[2]})` }}>
+                <div style={{ 'backgroundImage': `url(${images[2]})` , "height" : "50vh" }}>
                     <span>Slide 3</span>
                 </div>
             </div>
