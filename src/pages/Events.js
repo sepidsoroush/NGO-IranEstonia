@@ -1,6 +1,7 @@
 import React from 'react';
 import EventsInfo from '../data/EventsInfo';
 // import Slider from "../components/Slider" ;
+import {  Link } from 'react-router-dom'
 
 const Events = () => {
     return (
@@ -11,7 +12,8 @@ const Events = () => {
                     <div className='event-item' key={id}>
                         <h2 className='event-title'>{title}</h2>
                         <p className='event-description'>{description}</p>
-                        <button type='button' className='event-more'>Learn More </button>
+                        <Link to={`/events/${id}`} className='btn btn-details'>Learn more</Link>
+                        
                     </div>
                 )
             })}
