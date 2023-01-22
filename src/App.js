@@ -1,7 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
-import Contact from "./pages/Contact" ;
 import Donate from "./pages/Donate" ;
 import Events from "./pages/Events" ;
 import Home from "./pages/Home" ;
@@ -22,7 +21,6 @@ function App() {
         </Route>
         <Route path="/membership" element={<Membership />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </div>
