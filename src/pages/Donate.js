@@ -20,15 +20,15 @@ const Donate = () => {
           <a href="https://www.patreon.com/">PATREON</a>
         </fieldset>
         <div >
-        <h3>questions and answers about login</h3>
-        <section >
-          {questions.map((question) => {
-            return (
-              <FAQ key={question.id} {...question}></FAQ>
-            );
-          })}
-        </section>
-      </div>
+        <h3>questions and answers about Donation</h3>
+          <section >
+            {questions.map((question) => {
+              return (
+                <FAQ key={question.id} {...question}></FAQ>
+              );
+            })}
+          </section>
+        </div>
         
       </div>
     );
