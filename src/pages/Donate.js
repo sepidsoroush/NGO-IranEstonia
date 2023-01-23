@@ -1,6 +1,10 @@
 import { UilLock } from '@iconscout/react-unicons';
+import FAQ from "../components/FAQ";
+import FaqInfo from "../data/FaqInfo";
+import {useState } from 'react';
 
 const Donate = () => {
+  const [questions, setQuestions] = useState(FaqInfo);
     return (
       <div>
         <h2>Help us do more</h2>
@@ -15,9 +19,17 @@ const Donate = () => {
           <a href="https://www.paypal.com/">PayPal</a>
           <a href="https://www.patreon.com/">PATREON</a>
         </fieldset>
-        <div className="faq-container">
-
-        </div>
+        <div >
+        <h3>questions and answers about login</h3>
+        <section >
+          {questions.map((question) => {
+            return (
+              <FAQ key={question.id} {...question}></FAQ>
+            );
+          })}
+        </section>
+      </div>
+        
       </div>
     );
   };
