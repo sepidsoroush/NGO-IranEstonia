@@ -1,4 +1,8 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Team from '../data/TeamInfo';
 import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
+
 const About = () => {
   return(
     <div>
@@ -19,7 +23,18 @@ const About = () => {
       </section>
       <section>
         <h2>The Team</h2>
-
+        <div >
+            {Team.map((item)=>{
+                const {id , name , position , image} = item;
+                return(
+                    <div key={id}>
+                        <h2 >{name}</h2>
+                        <p>{position}</p>
+                        <img src={image} alt={name +"/" + position} />
+                    </div>
+                )
+            })}
+        </div>
       </section>
     </div>
   );
