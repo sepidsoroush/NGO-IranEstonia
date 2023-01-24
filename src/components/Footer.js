@@ -1,6 +1,6 @@
 import React from 'react';
+import Media from "./SocialMedia";
 import { Outlet, Link } from "react-router-dom";
-import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
 
 const Footer = () => {
   return (
@@ -26,17 +26,7 @@ const Footer = () => {
         </div>
         <div>
             <h2>Contact us</h2>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/freeirangroup"><UilFacebookF /></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/freeirangroup/"><UilInstagram/></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/iranianiso?s=21&t=Jpm22UuHWW--BpFe9r8y3A"><UilTwitter/></a>
-                </li>
-            </ul>
+            <Media />
             <div>
                 <h1>Newsletter</h1>
                 <p>Sign up to our Newsletter, to recieve updates on the latest news and upcoming events. We respect ypur privacy, Your Information is safe with us.</p>
