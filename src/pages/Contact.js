@@ -1,3 +1,4 @@
+import Message from "../components/Message";
 import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
 const Contact = () => {
   return(
@@ -18,14 +19,7 @@ const Contact = () => {
           </ul>
       </div>
       <div>
-        <h1>Get In Touch</h1>
-        <p>Your email address will not be published. Required fields are marked *</p>
-        <form action="">
-          <input type="name" placeholder="Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="textarea" placeholder="Your Message" />
-          <input type="submit" value="Send Message" />
-        </form>
+        <Message />
       </div>
     </div>
   );
