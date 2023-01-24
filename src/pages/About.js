@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Team from '../data/TeamInfo';
-import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
 
 const About = () => {
   return(
