@@ -19,6 +19,8 @@ const Contact = () => {
           </ul>
       </div>
       <div>
+        <h1>Get In Touch</h1>
+        <p>Your email address will not be published. Required fields are marked *</p>
         <Message />
       </div>
     </div>
