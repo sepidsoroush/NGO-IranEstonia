@@ -5,6 +5,7 @@ import Donate from "./pages/Donate" ;
 import Events from "./pages/Events" ;
 import Home from "./pages/Home" ;
 import Membership from "./pages/Membership" ;
+import Contact from './pages/Contact';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer" ;
 import SingleEvent from './components/SingleEvent';
@@ -21,6 +22,7 @@ function App() {
         </Route>
         <Route path="/membership" element={<Membership />} />
         <Route path="/about" element={<About />} />
+        <Route path='/contact' element={<Contact/>}></Route>
       </Routes>
       <Footer/>
     </div>

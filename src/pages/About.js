@@ -11,30 +11,6 @@ const About = () => {
         <p>In addition to its political activities, ISO also provides support and assistance to Iranians who have been affected by the regime's repression and human rights abuses. The organization works to provide legal and humanitarian assistance to Iranians who have been arrested, imprisoned, or exiled for their political beliefs.</p>
         <p>Overall, The Iranian Supportive Organization is a vital resource for Iranians seeking change in their country. The organization's work in political activism, advocacy, and support for the pro-democracy movement are crucial in helping Iranians to achieve freedom, democracy, and human rights in their country.</p>
       </div>
-      <div>
-          <h2>Contact with us</h2>
-          <p>Info@iraniansupportive.org</p>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/freeirangroup"><UilFacebookF /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/freeirangroup/"><UilInstagram/></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/iranianiso?s=21&t=Jpm22UuHWW--BpFe9r8y3A"><UilTwitter/></a>
-            </li>
-          </ul>
-      </div>
-      <div>
-        <h1>Newsletter</h1>
-        <p>Sign up to our Newsletter, to recieve updates on the latest news and upcoming events. We respect ypur privacy, Your Information is safe with us.</p>
-        <form action="">
-          <input type="email" />
-          <input type="submit" />
-        </form>
-      </div>
-
     </div>
   );
   };
