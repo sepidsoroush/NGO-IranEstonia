@@ -16,6 +16,10 @@ const Home = () => {
         <section className="section-events">
           <Events />
         </section>
+        <section className="section-action">
+          <h1>Lets Create Something Great Together!</h1>
+
+        </section>
       </div>
     );
   };
