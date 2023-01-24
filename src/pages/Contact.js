@@ -17,14 +17,7 @@ const Contact = () => {
             </li>
           </ul>
       </div>
-      <div>
-        <h1>Newsletter</h1>
-        <p>Sign up to our Newsletter, to recieve updates on the latest news and upcoming events. We respect ypur privacy, Your Information is safe with us.</p>
-        <form action="">
-          <input type="email" />
-          <input type="submit" />
-        </form>
-      </div>
+
 
     </div>
   );
