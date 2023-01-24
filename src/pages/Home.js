@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Events from "./Events" ;
+import Message from "../components/Message";
 
 import Logo from "../data/Images/Logo.jpg";
 
@@ -16,9 +17,9 @@ const Home = () => {
         <section className="section-events">
           <Events />
         </section>
-        <section className="section-action">
+        <section className="section-message">
           <h1>Lets Create Something Great Together!</h1>
-
+          <Message />
         </section>
       </div>
     );
