@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Events from "./Events" ;
 
 import Logo from "../data/Images/Logo.jpg";
 
@@ -12,7 +13,9 @@ const Home = () => {
             <Link to="/donate">Donate</Link>
           </div>
         </section>
-
+        <section className="section-events">
+          <Events />
+        </section>
       </div>
     );
   };
