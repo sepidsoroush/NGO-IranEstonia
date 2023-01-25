@@ -4,7 +4,7 @@ import { UilMinus , UilPlus } from '@iconscout/react-unicons';
 const FAQ = ({ title, info }) => {
     const [showInfo, setShowInfo] = useState(false);
     return (
-      <article className='question'>
+      <article >
         <header>
           <h4>{title}</h4>
           <button className='btn' onClick={() => setShowInfo(!showInfo)}>

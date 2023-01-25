@@ -6,16 +6,16 @@ const Events = () => {
     const Upcoming = EventsInfo.filter((item) => item.type === "Upcoming Events");
     const Past = EventsInfo.filter((item) => item.type === "Past Events");  
     return (
-        <div className='Event-container'>
+        <div>
             <section>
                 <h1>Upcoming Events</h1>
                 {Upcoming.map((item)=>{
                     const {id , title , description} = item;
                     return(
-                        <div className='event-item' key={id}>
-                            <h2 className='event-title'>{title}</h2>
-                            <p className='event-description'>{description}</p>
-                            <Link to={`/events/${id}`}  className='btn btn-details'>Learn more</Link>
+                        <div key={id}>
+                            <h2>{title}</h2>
+                            <p>{description}</p>
+                            <Link to={`/events/${id}`} >Learn more</Link>
                         </div>
                     )
                 })}
@@ -25,10 +25,10 @@ const Events = () => {
                 {Past.map((item)=>{
                     const {id , title , description} = item;
                     return(
-                        <div className='event-item' key={id}>
-                            <h2 className='event-title'>{title}</h2>
-                            <p className='event-description'>{description}</p>
-                            <Link to={`/events/${id}`}  className='btn btn-details'>Learn more</Link>
+                        <div key={id}>
+                            <h2>{title}</h2>
+                            <p>{description}</p>
+                            <Link to={`/events/${id}`}>Learn more</Link>
                         </div>
                     )
                 })}
