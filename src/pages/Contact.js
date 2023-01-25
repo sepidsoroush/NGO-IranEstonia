@@ -1,6 +1,6 @@
 import Message from "../components/Message";
 import Media from "../components/SocialMedia";
-import { UilInstagram , UilTwitter , UilFacebookF } from "@iconscout/react-unicons";
+
 const Contact = () => {
   return(
     <div>
