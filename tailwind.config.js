@@ -4,8 +4,8 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
-    colors :{
+    extend: {
+      colors :{
         'persian-indigo' : {
           50: '#f4f0fe' ,
           100: '#dbcef9',
@@ -19,6 +19,7 @@ module.exports = {
           900: '#0f0625', 
         }
     }
+    },
   },
   plugins: [],
 }
