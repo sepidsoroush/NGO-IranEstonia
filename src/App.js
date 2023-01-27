@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SingleEvent from './components/SingleEvent';
-
+//update routes
 function App() {
   return (
     <div className="App">
