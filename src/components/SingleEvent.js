@@ -2,15 +2,17 @@ import React from 'react';
 import 'react-slideshow-image/dist/styles.css';
 // import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom';
 import EventsInfo from '../data/EventsInfo';
-
+import { Slide } from 'react-slideshow-image';
 
 const SingleEvent = () => {
     const {id} = useParams();
     const SelectedEvent = EventsInfo[id -1];
+    console.log(id);
         return(
         <div >
+            console.log(id);
             <h2>{SelectedEvent.title}</h2>
             <p>{SelectedEvent.description}</p>
             {/* <Slide>
