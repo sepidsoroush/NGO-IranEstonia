@@ -9,10 +9,8 @@ import EventsInfo from '../data/EventsInfo';
 const SingleEvent = () => {
     const {id} = useParams();
     const SelectedEvent = EventsInfo[id -1];
-    console.log(id);
         return(
         <div >
-            console.log(id);
             <h2>{SelectedEvent.title}</h2>
             <p>{SelectedEvent.description}</p>
             {/* <Slide>
