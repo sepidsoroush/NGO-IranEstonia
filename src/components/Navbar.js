@@ -3,9 +3,9 @@ import Logo from "../data/Images/Logo.jpg";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 z-50 w-screen h-28 box-border text-gray-600 bg-white">
+    <header className="fixed top-0 z-50 w-screen h-28 box-border text-gray-600 bg-white shadow-lg">
       <nav className="px-10">
-        <div className="flex items-center justify-between mx-auto mx-w-screen-3xl">
+        <div className="flex items-center justify-between mx-auto max-w-screen-xl">
           <a href="/" className="flex flex-row items-center">
             <img src={Logo} alt="Iranian supportive organization" className="h-28 w-14 "/>
             <span className="text-2xl text-persian-indigo-700 font-bold flex-wrap pl-1.5">Iranian supportive organization</span>
