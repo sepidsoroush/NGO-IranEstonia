@@ -5,13 +5,12 @@ const FAQ = ({ title, info }) => {
     const [showInfo, setShowInfo] = useState(false);
     return (
       <article >
-        <header>
-          <h4>{title}</h4>
-          <button className='btn' onClick={() => setShowInfo(!showInfo)}>
-            {showInfo ? <UilMinus /> : <UilPlus />}
+        <header className='hover:bg-gray-100 my-2 py-2 max-w-xl '>
+          <button className='text-left' onClick={() => setShowInfo(!showInfo)}>
+            {showInfo ? <UilMinus className="inline-block mr-2" /> : <UilPlus className="inline-block mr-2" /> }<span>{title}</span>
           </button>
         </header>
-        {showInfo && <p>{info}</p>}
+        {showInfo && <p className='my-3 text-persian-indigo-700 ml-9'>{info}</p>}
       </article>
     );
   };
