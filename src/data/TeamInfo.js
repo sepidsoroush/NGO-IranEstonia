@@ -1,33 +1,34 @@
+import profile from "./Images/profile.jpg";
 const Team = [
     {
         id:1,
-        name: "Lorem Ipsum",
-        position : "co-founder",
-        image :"test"
+        name: "Vahid Afshari",
+        position : "EXECUTIVE DIRECTOR",
+        image : profile
     },
     {
         id:2,
-        name: "Lorem Ipsum",
-        position : "co-founder",
-        image :"test"
+        name: "Amirhossein Pazooki",
+        position : "DIRECTOR",
+        image : profile
     },
     {
         id:3,
-        name: "Lorem Ipsum",
-        position : "Event Planner",
-        image :"test"
+        name: "Malihe Keshmiri",
+        position : "CONTACT PERSON & SPEAKER",
+        image :profile
     },
     {
         id:4,
-        name: "Lorem Ipsum",
-        position : "Board Member",
-        image :"test"
+        name: "Morteza Ramezani",
+        position : "FINANCE MANAGER",
+        image : profile
     },
     {
         id:5,
-        name: "Lorem Ipsum",
-        position : "Board Member",
-        image :"test"
+        name: "Nima Sarabi",
+        position : "MARKETING & MEDIA MANAGER",
+        image :profile
     }
 ];
 export default Team;
