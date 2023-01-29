@@ -1,3 +1,11 @@
+import a from '../data/Images/Slide-1.jpg';
+import b from '../data/Images/Slide-2.jpg';
+import c from '../data/Images/Slide-3.jpeg';
+import d from '../data/Images/Slide-4.jpeg';
+import e from '../data/Images/Slide-5.jpeg';
+import f from '../data/Images/Slide-6.jpg';
+import g from '../data/Images/Slide-7.jpg';
+import h from '../data/Images/Slide-8.jpg';
 const EventsInfo = [
     {
       id: 1,
@@ -5,7 +13,7 @@ const EventsInfo = [
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc eros, accumsan at nisl ut, bibendum ornare ipsum. Donec velit.",
       image:
-      ['https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide03.jpeg?alt=media&token=d8987250-7763-4e6e-a70e-b48406232372' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide01.jpeg?alt=media&token=3c87050e-dbf9-4e5c-b20c-9aa35e33df88' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide02.jpeg?alt=media&token=8c038600-74a9-426e-aab2-c8e3e74d96d3' ]
+      [a , b ]
       ,type : "Past Events"
     },
     {
@@ -14,7 +22,7 @@ const EventsInfo = [
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc eros, accumsan at nisl ut, bibendum ornare ipsum. Donec velit.',
       image:
-      ['https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide03.jpeg?alt=media&token=d8987250-7763-4e6e-a70e-b48406232372' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide01.jpeg?alt=media&token=3c87050e-dbf9-4e5c-b20c-9aa35e33df88' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide02.jpeg?alt=media&token=8c038600-74a9-426e-aab2-c8e3e74d96d3' ]
+      [c , d , e ]
       ,type : "Past Events"
     },
     {
@@ -23,16 +31,16 @@ const EventsInfo = [
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc eros, accumsan at nisl ut, bibendum ornare ipsum. Donec velit.',
       image:
-      ['https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide03.jpeg?alt=media&token=d8987250-7763-4e6e-a70e-b48406232372' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide01.jpeg?alt=media&token=3c87050e-dbf9-4e5c-b20c-9aa35e33df88' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide02.jpeg?alt=media&token=8c038600-74a9-426e-aab2-c8e3e74d96d3' ]
+      [f , g , h ,a]
       ,type : "Past Events"
     },
     {
       id: 4,
-      title: 'Bloody November Events',
+      title: 'Telliskivi photo exhibition',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc eros, accumsan at nisl ut, bibendum ornare ipsum. Donec velit.',
       image:
-      ['https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide03.jpeg?alt=media&token=d8987250-7763-4e6e-a70e-b48406232372' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide01.jpeg?alt=media&token=3c87050e-dbf9-4e5c-b20c-9aa35e33df88' , 'https://firebasestorage.googleapis.com/v0/b/ayhan-b7555.appspot.com/o/files%2Fslide02.jpeg?alt=media&token=8c038600-74a9-426e-aab2-c8e3e74d96d3' ]
+      []
       ,type : "Upcoming Events"
     },
   ];
