@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 
 // JSX for styles
 const inputStyle ="border border-solid border-gray-300 rounded w-72 h-10 pl-2 my-1 ml-3";
@@ -16,7 +17,7 @@ const Membership = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(inputs);
+    axios.post('https://iso-backend.herokuapp.com/',inputs);
   }
     return (
       <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
