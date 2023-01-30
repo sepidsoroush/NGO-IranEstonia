@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className='bg-persian-indigo-50 text-persian-indigo-700 text-sm  w-screen'>
+    <div className='bg-persian-indigo-50  bg-opacity-50 text-persian-indigo-900 text-sm  w-screen'>
         <div className='flex flex-row justify-around w-3/4 mx-auto'>
         <div className=' my-6 w-32'>
             <p className='text-base font-bold mb-2' >Contact us</p>
