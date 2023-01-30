@@ -7,18 +7,42 @@ const checkBox ="my-3 mr-3";
 const labelStyle ="text-gray-600";
 
 const Membership = () => {
+  const activities =[
+    {index :1 , name : 'software' , label : 'IT & Software'},
+    {index :2 , name : 'translation' , label : 'Translation'},
+    {index :3 , name : 'editing' , label :'Graphic & Video Editing'},
+    {index :4 , name : 'art' , label :'Art & Culture'},
+    {index :5 , name : 'media' , label :'Social Media'},
+    {index :6 , name : 'legal' , label :'Legal'},
+    {index :7 , name : 'administrative' , label :'Administrative & HR'},
+    {index :8 , name : 'journalism' , label :'Journalism'},
+    {index :9 , name : 'other' , label :'Other'}];
   const [inputs, setInputs] = useState({});
+  const [activity,setActivity] = useState([false,false,false,false,false,false,false,false,false]);
+  const [isloading , setIsloading] =useState(false);
 
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
   }
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    axios.post('https://iso-backend.herokuapp.com/',inputs);
+  const handleCheckbox = (position) => {
+    const updatedCheckbox = activity.map((item,index)=> index === position ? !item :item)
+    setActivity(updatedCheckbox)
   }
+  console.log(activity);
+  const handleSubmit = (event) => {
+    setIsloading(true);
+    event.preventDefault();
+    axios.post('http://172.20.10.6:8080/user',{inputs,activity}).then(
+      (res)=>{console.log(res);
+        setIsloading(false)}
+    ).catch(
+      (err)=>{console.log(err);
+        setIsloading(false)}
+    );
+  }
+ 
     return (
       <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
         <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
@@ -30,7 +54,7 @@ const Membership = () => {
               name='userName'
               value={inputs.userName || ""}
               onChange={handleChange}
-              required="required"
+              required
               className={inputStyle}
             />
           </label>
@@ -41,125 +65,40 @@ const Membership = () => {
               name='userEmail'
               value={inputs.userEmail || ""}
               onChange={handleChange}
-              required="required"
+              required
               className={inputStyle}
             />
           </label>
           
           <p className='mb-2 mt-6 font-semibold'>Fields of volunteer collaboration</p>
-          <div>
-            <input 
-                type="checkbox" 
-                id='software'
-                name='software'
-                value={inputs.software}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="software" className={labelStyle}>IT & Software</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='translation'
-                name='translation'
-                value={inputs.translation}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="translation" className={labelStyle}>Translation</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='editing'
-                name='editing'
-                value={inputs.editing}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="editing" className={labelStyle}>Graphic & Video Editing</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='art'
-                name='art'
-                value={inputs.art}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="art" className={labelStyle}>Art & Culture</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='media'
-                name='media'
-                value={inputs.media}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="media" className={labelStyle}>Social Media</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='legal'
-                name='legal'
-                value={inputs.legal}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="legal" className={labelStyle}>Legal</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='administrative'
-                name='administrative'
-                value={inputs.administrative}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="administrative" className={labelStyle}>Administrative & HR</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='journalism'
-                name='journalism'
-                value={inputs.journalism}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="journalism" className={labelStyle}>Journalism</label>
-          </div>
-
-          <div>
-            <input 
-                type="checkbox" 
-                id='other'
-                name='other'
-                value={inputs.other}
-                onChange={handleChange}
-                className={checkBox}
-                />
-            <label htmlFor="other" className={labelStyle}>Other</label>
-          </div>
+          <ul>
+            {activities.map(({name , label} ,index)=>{
+              return(
+                <li key={index}>
+                  <input
+                  type="checkbox"
+                  id={`checkbox-${index}`}
+                  name={name}
+                  value={name}
+                  className={checkBox}
+                  checked={activity[index]}
+                  onChange={()=>handleCheckbox(index)} />
+                  <label
+                  htmlFor={`checkbox-${index}`}
+                  className={labelStyle}
+                  >{label}</label>
+                </li>
+              )
+            })}
+          </ul>
 
           <div className='flex justify-center items-center'>
             <input 
-              type="submit"
+              type='submit'
+              value={isloading ? 'Submiting...' : 'Submit'}
               onClick={handleSubmit} 
-              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-24 px-4 py-2 mt-8"
+              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8"
+              disabled={isloading}
             />
           </div>
         </form>
