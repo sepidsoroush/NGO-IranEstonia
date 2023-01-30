@@ -4,11 +4,11 @@ import Logo from "../data/Images/Logo.jpg";
 const Navbar = () => {
   return (
     <header className="fixed top-0 z-50 w-screen h-28 box-border text-gray-600 bg-white shadow-lg">
-      <nav className="px-10">
-        <div className="flex items-center justify-between mx-auto max-w-screen-xl">
-          <a href="/" className="flex flex-row items-center">
-            <img src={Logo} alt="Iranian supportive organization" className="h-28 w-14 "/>
-            <span className="text-2xl text-persian-indigo-700 font-bold flex-wrap pl-1.5">Iranian supportive organization</span>
+      
+        <div className="flex items-center justify-between my-4 mx-auto max-w-screen-xl ">
+          <a href="/" className="flex flex-row items-center justify-center">
+            <img src={Logo} alt="Iranian supportive organization" className="h-20 w-10 "/>
+            <span className="text-md text-persian-indigo-700 font-bold flex-wrap pl-2">Iranian supportive organization</span>
           </a>
 
           <ul className="cursor-pointer flex flex-row items-center justify-end">
@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </nav>
+      
       <Outlet />
     </header>
   )
