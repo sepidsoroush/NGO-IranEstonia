@@ -3,7 +3,7 @@ import Media from "../components/SocialMedia";
 
 const Contact = () => {
   return(
-    <div className="my-56 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
+    <div className="my-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
       <div className="flex flex-col items-center ">
         <h1 className="text-2xl font-semibold mt-8">Feel Free to Contact US</h1>
         <p className="mt-6 mb-3">Info@iraniansupportive.org</p>

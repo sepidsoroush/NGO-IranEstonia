@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import EventsInfo from '../data/EventsInfo';
 
 // JSX for styles
-const titleStyle ="text-4xl font-semibold mb-8 pt-20 text-center";
+const titleStyle ="text-white text-4xl font-semibold mb-8 pt-20 text-center";
 const sectionStyle = 'flex flex-wrap flex-row-reverse items-center justify-center ';
 const postStyle = 'w-80 h-96 p-6 m-6 text-center bg-indigo-50 flex flex-col justify-around items-center rounded';
 const postTitle ='text-lg font-bold';
@@ -13,7 +13,7 @@ const Events = () => {
     const Upcoming = EventsInfo.filter((item) => item.type === "Upcoming Events");
     const Past = EventsInfo.filter((item) => item.type === "Past Events");  
     return (
-        <div className='w-screen mt-28 flex flex-col items-center justify-center'>
+        <div className='w-screen mt-28 flex flex-col items-center justify-center bg-persian-indigo-800'>
             <section>
                 <h1 className={titleStyle}>Upcoming Events</h1>
                 <div className={sectionStyle}>

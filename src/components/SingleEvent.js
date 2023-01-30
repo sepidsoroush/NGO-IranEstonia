@@ -1,4 +1,4 @@
-import{ React , useState} from 'react';
+import{ React} from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import { useParams, Link } from 'react-router-dom';
 import EventsInfo from '../data/EventsInfo';
