@@ -52,7 +52,7 @@ const Navbar = () => {
                 const {id,url,text} =link;
                 return(
                   <li key={id} className={liLinks}>
-                    <Link to={url}>{text}</Link>
+                    <Link to={url} onClick={toggleLinks}>{text}</Link>
                   </li>
                 );
               })}
