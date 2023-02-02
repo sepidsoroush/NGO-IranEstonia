@@ -15,13 +15,16 @@ const Donate = () => {
           <legend> <UilLock className="inline-block"/> <span>Secure donation</span></legend>
           <div className='flex flex-col'>
             <form action="https://stripe.com/en-ee/" target='_blank' >
-              <input type="text" />
-              <button className='bg-persian-indigo-700 text-white w-80 h-11 flex items-center justify-center my-1  font-bold rounded'>Donate</button>
+              <input type="text" className='w-full border border-solid border-gray-300 rounded h-10 my-1 pl-4' placeholder='5€' required  />
+              <button className='bg-persian-indigo-700 text-white w-80 h-10 flex items-center justify-center my-1  font-bold rounded'>Donate</button>
             </form>
-            <div className='flex flex-row justify-center items-center border-b-2'>
-              <span className=''>Or donate with card</span>
+            <div className='flex flex-row justify-center items-center flex-nowrap my-5 w-full'>
+              <span className=' border-b-2 w-1/2'></span>
+              <p className='inline-block w-full text-center'>Or donate with card</p>
+              <span className=' border-b-2 w-1/2 '></span>
             </div>
-            <div>
+            <div className='leading-loose'>
+              <p>Iranian Supportive Oraganization</p>
               <p>IBAN: EE000000000000000000</p>
               <p>SWIFT/BIC: EEEEEE00</p>
             </div>      
