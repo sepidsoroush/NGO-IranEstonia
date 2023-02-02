@@ -13,7 +13,7 @@ const Message = () => {
   const handleSubmit = (event) => {
     setIsloading(true);
     event.preventDefault();
-    axios.post('http://172.20.10.6:8080/user',message).then(
+    axios.post('https://iso-backend.herokuapp.com/contact',message).then(
       (res)=>{console.log(res);
         setIsloading(false)}
     ).catch(
