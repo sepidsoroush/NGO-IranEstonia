@@ -1,12 +1,13 @@
 import Events from './Events' ;
 import Message from '../components/Message';
-import About from './About';
+import  {AboutUs, OurStory } from '../components/AboutUs';
 
 const Home = () => {
     return(
       <div>
-        <section>
-          <About/>
+        <section className=' mt-28 '>
+          <AboutUs/>
+          <OurStory />
         </section>
         <section>
           <Events />

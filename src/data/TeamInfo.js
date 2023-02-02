@@ -1,5 +1,5 @@
 import profile from "./Images/profile.jpg";
-const Team = [
+const TeamInfo = [
     {
         id:1,
         name: "Vahid Afshari",
@@ -37,4 +37,4 @@ const Team = [
         image :profile
     }
 ];
-export default Team;
+export default TeamInfo;
