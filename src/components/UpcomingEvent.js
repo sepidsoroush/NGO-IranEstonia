@@ -20,7 +20,7 @@ const UpcomingEvent = () => {
                 return(
                     <div className={postStyle} key={id}>
                         <h2 className={postTitle}>{title}</h2>
-                        <p>{description}</p>                            <Link to={`/events/${id}`} className={linkStyle}>Learn more</Link>
+                        <p>{description}</p>                            <Link to={`/events/${id}`} className={linkStyle}>Read more</Link>
                     </div>
                     )
                 })}
