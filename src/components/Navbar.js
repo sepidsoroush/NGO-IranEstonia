@@ -23,7 +23,7 @@ const logoContainer ='flex items-center justify-center'
 const buttonStyle ='md:hidden';
 const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white ';
 const ulLinks = 'md:flex';
-const liLinks = 'md:px-0 md:py-2 md:mx-1 lg:px-1 xl:px-2 sm:py-2 hover:scale-90';
+const liLinks = 'md:px-0 md:py-2 md:mx-1 lg:px-1 xl:px-2 py-2 hover:scale-90';
 
 const Navbar = () => {
   const [showLinks , setShowLinks] =useState(false);
