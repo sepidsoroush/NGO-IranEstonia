@@ -41,6 +41,8 @@ const Membership = () => {
       (err)=>{console.log(err);
         setIsloading(false)}
     );
+    setInputs({});
+    setActivity([false,false,false,false,false,false,false,false,false]);
   }
  
     return (
