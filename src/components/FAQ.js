@@ -5,7 +5,7 @@ const FAQ = ({ title, info }) => {
     const [showInfo, setShowInfo] = useState(false);
     return (
       <article >
-        <header className='hover:bg-gray-100 my-2 py-2 max-w-xl '>
+        <header className='hover:bg-gray-100 my-2 py-2'>
           <button className='text-left' onClick={() => setShowInfo(!showInfo)}>
             {showInfo ? <UilMinus className="inline-block mr-2" /> : <UilPlus className="inline-block mr-2" /> }<span>{title}</span>
           </button>
