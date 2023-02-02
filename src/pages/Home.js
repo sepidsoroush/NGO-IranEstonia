@@ -1,4 +1,4 @@
-import Events from './Events' ;
+import UpcomingEvent from '../components/UpcomingEvent' ;
 import Message from '../components/Message';
 import  {AboutUs, OurStory } from '../components/AboutUs';
 
@@ -10,7 +10,7 @@ const Home = () => {
           <OurStory />
         </section>
         <section>
-          <Events />
+          <UpcomingEvent />
         </section>
         <section className=' my-20 '>
           <h1 className="text-4xl font-semibold mb-8 pt-20 text-center">Lets Create Something Great Together!</h1>
