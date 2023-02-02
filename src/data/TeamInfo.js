@@ -29,6 +29,12 @@ const Team = [
         name: "Nima Sarabi",
         position : "MARKETING & MEDIA MANAGER",
         image :profile
+    },
+    {
+        id:6,
+        name: "Tahmine Ansari",
+        position : "HR MANAGER",
+        image :profile
     }
 ];
 export default Team;
