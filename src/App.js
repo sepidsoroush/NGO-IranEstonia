@@ -6,9 +6,10 @@ import Events from './pages/Events';
 import Home from './pages/Home';
 import Membership from './pages/Membership';
 import Contact from './pages/Contact';
+import SingleEvent from './pages/SingleEvent';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import SingleEvent from './components/SingleEvent';
+
 //update routes
 function App() {
   return (
