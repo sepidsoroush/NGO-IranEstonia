@@ -7,10 +7,9 @@ const links = [
   {id : 1, url : '/', text : 'Home'},
   {id : 2, url : '/events', text : 'Events' },
   {id : 3, url : '/about', text : 'About'},
-  {id : 4, url : '/news', text : 'News'},
-  {id : 5, url : '/membership', text : 'Membership'},
-  {id : 6, url : '/contact', text : 'Contact'},
-  {id : 7 , url : '/donate' , text : 'Donation'}
+  {id : 4, url : '/membership', text : 'Membership'},
+  {id : 5, url : '/contact', text : 'Contact'},
+  {id : 6 , url : '/donate' , text : 'Donation'}
 ];
 
 // JSX for styles
