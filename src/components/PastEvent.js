@@ -15,7 +15,7 @@ const PastEvent = () => {
                     <div 
                     key={id}
                     className='p-6 flex flex-col sm:flex-row items-center my-5' >
-                        <img src={poster} alt="poster" className='w-72 h-72 ' />
+                        <img src={poster} alt="poster" className='w-72 h-72 border border-gray-300 object-cover' />
                         <div className='flex flex-col sm:pl-5 pl-0 pt-5 sm:pt-0 max-w-xs sm:max-w-xl items-center sm:items-start'>
                             <h2 className='text-lg font-bold'>{title}</h2>
                             <p className=' py-4 w-full'>{description}</p>
