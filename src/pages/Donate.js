@@ -6,10 +6,10 @@ const Donate = () => {
     return (
       <div className='mt-28 max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl flex flex-col mx-auto'>
         <h1 className='text-4xl py-6 text-center'>Help us do more</h1>
-        <div className='px-10 leading-loose text-lg text-justify'>
-          <p>Fusce sit amet velit velit. Aliquam id velit malesuada, condimentum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget velit semper nisl sollicitudin condimentum vitae at felis. Morbi vehicula.</p>
-          <p>Pellentesque elementum vel ante sit amet finibus. Donec dapibus ligula eleifend, dictum tortor in, euismod.</p>
+        <div className='px-10 leading-loose text-justify'>
+          <p>Our main vision is to support the Iranian community and promote its social position in Estonia and abroad. We aim to provide opportunities for members of the community to participate in various social activities that benefit them and bring them together.</p>
+          <p>Donations will be used to fund the various activities and programs that we organize to achieve our mission and vision. This includes cultural events, political discussions, social gatherings, and other initiatives that bring the community together and help it thrive.</p>
+          
         </div>
         <fieldset className='border border-solid border-gray-500 p-3 max-w-screen-sm w-6/12 flex justify-center mx-auto my-10'>
           <legend> <UilLock className="inline-block"/> <span>Secure donation</span></legend>
