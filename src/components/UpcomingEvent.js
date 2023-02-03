@@ -6,7 +6,7 @@ const UpcomingEvent = () => {
     const Upcoming = EventsInfo.filter((item) => item.type === "Upcoming Events");  
     return (
         <div className='max-w-7xl mx-auto justify-start'>
-            <h1 className=" text-4xl font-semibold mb-8 pt-20 text-center">Past Events</h1>
+            <h1 className=" text-4xl font-semibold mb-8 pt-20 text-center">Upcoming Events</h1>
             <div className='flex flex-nowrap flex-col-reverse '>
                 {Upcoming.map((item)=>{
                 const {id , title , description , poster , link} = item;
