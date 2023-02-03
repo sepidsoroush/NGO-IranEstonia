@@ -52,7 +52,7 @@ const Message = () => {
           type="submit"
           value={isloading ? 'Submiting...' : 'Send Message'}
           onClick={handleSubmit}  
-          className='rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700 w-34 px-4 py-2 mt-8 text-base'/>
+          className='rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700 w-34 px-4 py-2 mt-8 text-base active:scale-90'/>
         </form>
     </div>
   );

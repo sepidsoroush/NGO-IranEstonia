@@ -99,7 +99,7 @@ const Membership = () => {
               type='submit'
               value={isloading ? 'Submiting...' : 'Submit'}
               onClick={handleSubmit} 
-              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8"
+              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8 active:scale-90"
               disabled={isloading}
             />
           </div>

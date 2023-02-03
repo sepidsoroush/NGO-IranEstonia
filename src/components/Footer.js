@@ -66,7 +66,7 @@ const Footer = () => {
                 type="submit"
                 value={isloading ? 'Submiting...' : 'Submit'}
                 onClick={handleSubmit} 
-                className='bg-persian-indigo-700 px-2 py-1 rounded text-white'  />
+                className='bg-persian-indigo-700 px-2 py-1 rounded text-white active:scale-90'  />
             </form>
         </div>
         </div>
