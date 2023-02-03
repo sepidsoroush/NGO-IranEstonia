@@ -8,8 +8,10 @@ const Home = () => {
     return(
       <div className=''>
         <section className='flex items-center justify-center h-screen w-screen bg-fixed bg-center bg-cover overflow-x-hidden mt-28' style={{backgroundImage : `url('${Hero}')`}}>
-          <div className='p-5 text-2xl text-persian-indigo-900 bg-white bg-opacity-50 rounded'>
-            Welcome to ISO Website
+          <div className='p-8 text-2xl text-white bg-persian-indigo-800 bg-opacity-50 flex flex-col float-left w-96'>
+            <p className='text-5xl font-bold'>Iranian supportive organization</p>
+            <hr className='border border-white my-4  w-16'/>
+            <p className='text-base text-justify'>Join ISO and work with other Iranian people in Estonia to spread awareness about Iran and create a supportive community for Iranians in Estonia!</p>
           </div>
         </section>
         <section className='md:max-w-6xl mx-auto'>
