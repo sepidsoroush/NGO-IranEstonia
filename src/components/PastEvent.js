@@ -2,25 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import EventsInfo from '../data/EventsInfo';
 
-// JSX for styles
-const titleStyle =" text-4xl font-semibold mb-8 pt-20 text-center";
-const sectionStyle = 'flex flex-wrap flex-row-reverse items-center justify-center ';
-const postStyle = 'w-80 h-96 p-6 m-6 text-center bg-indigo-50 flex flex-col justify-around items-center rounded';
-const postTitle ='text-lg font-bold';
-const linkStyle ='hover:bg-persian-indigo-700 hover:bg-opacity-30 transition duration-500 ease-in-out px-4 py-2 rounded';
 
 const PastEvent = () => {
     const Past = EventsInfo.filter((item) => item.type === "Past Events");  
     return (
-        <div>
-            <h1 className={titleStyle}>Past Events</h1>
-            <div className={sectionStyle}>
+        <div className='max-w-7xl mx-auto justify-start'>
+            <h1 className=" text-4xl font-semibold mb-8 pt-20 text-center">Past Events</h1>
+            <div className='flex flex-nowrap flex-col-reverse '>
                 {Past.map((item)=>{
-                const {id , title , description} = item;
+                const {id , title , description , poster} = item;
                 return(
-                    <div className={postStyle} key={id}>
-                        <h2 className={postTitle}>{title}</h2>
-                        <p>{description}</p>                           <Link to={`/events/${id}`} className={linkStyle} >Read more</Link>
+                    <div 
+                    key={id}
+                    className='p-6 flex flex-col sm:flex-row items-center my-5' >
+                        <img src={poster} alt="poster" className='w-72 h-72 ' />
+                        <div className='flex flex-col sm:pl-5 pl-0 pt-5 sm:pt-0 max-w-xs sm:max-w-xl items-center sm:items-start'>
+                            <h2 className='text-lg font-bold'>{title}</h2>
+                            <p className=' py-4 w-full'>{description}</p>
+                            <Link to={`/events/${id}`} className='text-white bg-persian-indigo-800 hover:bg-opacity-80 transition duration-500 ease-in-out py-2 rounded w-24 text-center text-sm'>Read more</Link>
+                        </div>
                     </div>
                     )
                 })}
