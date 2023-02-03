@@ -32,7 +32,7 @@ const Donate = () => {
         </fieldset>
 
         <div className='felx felx-col justify-center mx-auto my-8 px-10'>
-          <h3 className='border-t border-gray-200 py-6 text-2xl font-bold text-center'>Questions and Answers about Donation</h3>
+          <h3 className='border-t border-gray-200 py-6 text-2xl font-bold text-center' >Questions and Answers about Donation</h3>
           <section >
             {FaqInfo.map((question) => {
               return (
