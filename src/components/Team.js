@@ -2,8 +2,9 @@ import TeamInfo from '../data/TeamInfo';
 
 const Team = () =>{
     return (
-        <div className='flex flex-wrap items-center justify-center'>
+        <div >
             <h2 className="text-4xl font-semibold mb-8 pt-20 text-center" >The Team</h2>
+            <div className='flex flex-wrap items-center justify-center'>
             {TeamInfo.map((item)=>{
                 const {id , name , position , image} = item;
                 return(
@@ -15,6 +16,7 @@ const Team = () =>{
                     </div>
                 )
             })}
+            </div>
         </div>
     );
 }

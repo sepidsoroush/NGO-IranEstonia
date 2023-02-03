@@ -4,7 +4,7 @@ import  {AboutUs, OurStory } from '../components/AboutUs';
 
 const About = () => {
   return(
-    <div className='max-w-screen-xl mx-auto my-28'>
+    <div className='md:max-w-6xl mx-auto my-28'>
       <AboutUs />
       <OurStory />
       <Team />

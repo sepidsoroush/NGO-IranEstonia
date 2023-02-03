@@ -4,7 +4,7 @@ import  {AboutUs, OurStory } from '../components/AboutUs';
 
 const Home = () => {
     return(
-      <div>
+      <div className='md:max-w-6xl mx-auto'>
         <section className='mt-28 '>
           <AboutUs/>
           <OurStory />
