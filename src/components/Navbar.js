@@ -17,10 +17,10 @@ const navbar ='fixed top-0 z-50 w-screen h-28 box-border text-gray-600 bg-white 
 const navbarStyle = 'md:max-w-6xl md:my-0 md:mx-auto md:flex md:items-center md: justify-between md:p-4';
 const navbarHeader ='md:p-0 flex items-center justify-between p-4 ';
 const logoStyle ='h-20 w-10';
-const titleStyle ='text-sm text-persian-indigo-700 pl-4 w-32 text-justify';
+const titleStyle ='text-xs text-persian-indigo-700 pl-4 w-28 text-justify';
 const logoContainer ='flex items-center justify-center'
 const buttonStyle ='md:hidden';
-const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white ';
+const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white';
 const ulLinks = 'md:flex';
 const liLinks = 'md:px-0 md:py-2 md:mx-1 lg:px-1 xl:px-2 py-2 hover:scale-90';
 
