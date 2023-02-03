@@ -7,6 +7,7 @@ import f from '../data/Images/Slide-6.jpg';
 import g from '../data/Images/Slide-7.jpg';
 import h from '../data/Images/Slide-8.jpg';
 import poster from '../data/Images/poster.jpeg';
+import poster2 from '../data/Images/poster2.jpeg';
 
 const EventsInfo = [
     {
@@ -220,8 +221,9 @@ const EventsInfo = [
     {
       id: 24,
       title: 'Telliskivi photo exhibition',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nunc eros, accumsan at nisl ut, bibendum ornare ipsum. Donec velit.',
-      poster : poster,
+      description: ' In the past 4 months, Iranian protesters have made it quite clear they consider the regime unreformable and are pursuing its demise, without a clear leader.Most of these pictures were taken by protesters during the last four months, but some of them show young victims brutally killed by the regime. It is the aim of this gallery to give audiences a real glimpse of what is happening in Iran and how young people are demanding rights and being suppressed, arrested, raped, and killed.The exhibition is organized in cooperation with the Iranian Supportive Organization (ISO).The exhibition is open 24/7 in Telliskivi Creative City. Three Tree Gallery from 4th of February until the end of March.',
+      link : 'https://fb.me/e/3hROkfjsc',
+      poster : poster2,
       image:
       []
       ,type : "Upcoming Events"
