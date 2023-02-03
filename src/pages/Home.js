@@ -18,10 +18,10 @@ const Home = () => {
           <AboutUs/>
           <OurStory />
         </section>
-        <section className='flex flex-col justify-center items-center md:max-w-6xl mx-auto'>
+        <section className='flex flex-col justify-center items-center  mx-auto  bg-gradient-to-b from-transparent to-persian-indigo-50 '>
           <UpcomingEvent />
         </section>
-        <section className=' my-20 md:max-w-6xl mx-auto'>
+        <section className=' mb-20 md:max-w-6xl mx-auto'>
           <h1 className="text-3xl font-semibold mb-8 pt-20 text-center">Lets Create Something Great Together!</h1>
           <Message />
         </section>

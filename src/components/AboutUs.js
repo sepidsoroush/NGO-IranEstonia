@@ -8,9 +8,9 @@ const AboutUs = () => {
   return(
     <div>
       <h2 className={titleStyle} >About Iranian supportive organization (ISO)</h2>
-        <p className={textStyle} >Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-        <p className={textStyle} >Sed porttitor lectus nibh. Sed porttitor lectus nibh. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
-        <p className={textStyle} >Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+        <p className={textStyle} >Our main vision is to support the Iranian community and promote its social position in Estonia and abroad. We aim to provide opportunities for members of the community to participate in various social activities that benefit them and bring them together.</p>
+        {/* <p className={textStyle} >Sed porttitor lectus nibh. Sed porttitor lectus nibh. Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
+        <p className={textStyle} >Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p> */}
     </div>
   );
   };
