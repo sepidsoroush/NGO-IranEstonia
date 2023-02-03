@@ -17,8 +17,8 @@ const UpcomingEvent = () => {
                         <img src={poster} alt="poster" className='w-72 h-72 ' />
                         <div className='flex flex-col sm:pl-5 pl-0 pt-5 sm:pt-0 max-w-xs sm:max-w-xl items-center sm:items-start'>
                             <h2 className='text-lg font-bold'>{title}</h2>
-                            <p className=' py-4 w-full'>{description}</p>
-                            <a href={link}
+                            <p className=' py-2 text-sm w-full'>{description}</p>
+                            <a href={link} target='_blank' rel="noreferrer"
                             className='text-white bg-persian-indigo-800 hover:bg-opacity-80 transition duration-500 ease-in-out py-2 rounded w-24 text-center text-sm'>Read more</a>
                             
                         </div>
