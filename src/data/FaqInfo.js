@@ -3,7 +3,7 @@ const questions = [
       id: 1,
       title: 'What is the mission and vision of the NGO?',
       info:
-        'Our mission is to support and promote the activities of the Iranian community in Estonia and abroad. We aim to provide opportunities for members of the community to participate in cultural, and political? and social activities that benefit them and bring them together.'
+        'Our main vision is to support the Iranian community and promote its social position in Estonia and abroad. We aim to provide opportunities for members of the community to participate in various social activities that benefit them and bring them together.'
     },
     {
       id: 2,
