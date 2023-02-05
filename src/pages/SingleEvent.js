@@ -1,3 +1,4 @@
+import {Helmet} from 'react-helmet-async';
 import{ React} from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import { useParams, Link } from 'react-router-dom';
@@ -11,6 +12,10 @@ const SingleEvent = () => {
     const slideImages = SelectedEvent.image;
         return(
         <div className=' flex flex-col justify-center items-center max-w-screen-xl mx-auto my-40'>
+            <Helmet>
+                <title>Events - ISO</title>
+                <meta name='description' content='Events of ISO organization'/>
+            </Helmet>
             <h2 className='text-2xl font-semibold'>{SelectedEvent.title}</h2>
             <p className='m-10 '>{SelectedEvent.description}</p>
             {slideImages.length===0 ? <p></p> :

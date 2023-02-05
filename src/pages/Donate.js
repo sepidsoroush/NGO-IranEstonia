@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { UilLock } from '@iconscout/react-unicons';
 import FAQ from "../components/FAQ";
 import FaqInfo from "../data/FaqInfo";
@@ -5,6 +6,10 @@ import FaqInfo from "../data/FaqInfo";
 const Donate = () => {
     return (
       <div className='mt-28 max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl flex flex-col mx-auto'>
+        <Helmet>
+          <title>Donate - ISO</title>
+          <meta name='description' content='Donation to ISO organization'/>
+        </Helmet>
         <h1 className='text-4xl py-6 text-center'>Help us do more</h1>
         <div className='px-10 leading-loose text-justify'>
           <p>Our main vision is to support the Iranian community and promote its social position in Estonia and abroad. We aim to provide opportunities for members of the community to participate in various social activities that benefit them and bring them together.</p>

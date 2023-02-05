@@ -1,3 +1,4 @@
+import {Helmet} from 'react-helmet-async';
 import { useState } from 'react';
 import axios from 'axios';
 
@@ -47,6 +48,10 @@ const Membership = () => {
  
     return (
       <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
+        <Helmet>
+          <title>Membership - ISO</title>
+          <meta name='description' content='Become a member of ISO organization'/>
+        </Helmet>
         <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
         <form action="" className='flex flex-col'>
           <label htmlFor="name">Enter your name
