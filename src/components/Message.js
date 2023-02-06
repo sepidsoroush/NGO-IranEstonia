@@ -40,14 +40,14 @@ const Message = () => {
           placeholder="Email Address" 
           required
           className="border border-solid divide-gray-300 w-96 h-10 pl-2 my-1"/>
-          <input 
-          type="textarea"
+          <textarea 
+          
           name='userMessage'
           value={message.userMessage || ""}
           onChange={handleChange} 
           placeholder="Your Message" 
           required
-          className="border border-solid divide-gray-300 w-96 h-36 pl-2 my-1"/>
+          className="border border-solid  divide-gray-300 w-96 h-36 pl-2 pt-2 my-1 break-words"/>
           <input 
           type="submit"
           value={isloading ? 'Submiting...' : 'Send Message'}
