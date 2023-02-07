@@ -54,12 +54,12 @@ const Membership = () => {
   }
  
     return (
-      <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
+      <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-10">
         <Helmet>
           <title>Membership - ISO</title>
           <meta name='description' content='Become a member of ISO organization'/>
         </Helmet>
-        <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
+        <h1 className="text-2xl font-semibold my-8 text-left">Become a member of ISO</h1>
         <form className='flex flex-col'>
           <label htmlFor="name">Enter your name
             <input

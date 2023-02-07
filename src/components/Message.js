@@ -23,7 +23,7 @@ const Message = () => {
   }
   return(
     <div>
-        <form action="" className=" flex flex-col items-center text-sm">
+        <form action="" className=" flex flex-col items-center text-sm mx-2">
           <input
           type="name"
           name='userName'
@@ -31,7 +31,7 @@ const Message = () => {
           onChange={handleChange}
           placeholder="Name" 
           required 
-          className="border border-solid divide-gray-300 w-96 h-10 pl-2 my-1"/>
+          className="border border-solid divide-gray-300 w-80 h-10 pl-2 my-1"/>
           <input 
           type="email" 
           name='userEmail'
@@ -39,7 +39,7 @@ const Message = () => {
           onChange={handleChange}
           placeholder="Email Address" 
           required
-          className="border border-solid divide-gray-300 w-96 h-10 pl-2 my-1"/>
+          className="border border-solid divide-gray-300 w-80 h-10 pl-2 my-1"/>
           <textarea 
           
           name='userMessage'
@@ -47,7 +47,7 @@ const Message = () => {
           onChange={handleChange} 
           placeholder="Your Message" 
           required
-          className="border border-solid  divide-gray-300 w-96 h-36 pl-2 pt-2 my-1 break-words"/>
+          className="border border-solid  divide-gray-300 w-80 h-36 pl-2 pt-2 my-1 break-words"/>
           <input 
           type="submit"
           value={isloading ? 'Submiting...' : 'Send Message'}
