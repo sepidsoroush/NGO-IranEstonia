@@ -1,5 +1,5 @@
 import {Helmet} from 'react-helmet-async';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { UilCheck , UilExclamationOctagon } from '@iconscout/react-unicons';
 
