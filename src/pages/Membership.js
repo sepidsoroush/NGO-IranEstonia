@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 
 // JSX for styles
 const inputStyle =
-  'border border-solid border-gray-300 rounded w-72 h-10 pl-2 my-1 ml-3';
+  'border border-solid border-gray-300 rounded  w-72 h-10 pl-2 my-1 ml-3';
 const checkBox = 'my-3 mr-3';
 const labelStyle = 'text-gray-600';
 const validation = Yup.object().shape({
@@ -78,25 +78,62 @@ const Membership = () => {
         setShowError(true);
       });
     setInputs({});
-    setActivity([false,false,false,false,false,false,false,false,false]);
-  }
- 
-    return (
-      <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
-        <Helmet>
-          <title>Membership - ISO</title>
-          <meta name='description' content='Become a member of ISO organization'/>
-        </Helmet>
-        <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
-        <form className='flex flex-col'>
-          <label htmlFor="name">Enter your name
-            <input
-              type="text"
-              id="name"
-              name='userName'
-              value={inputs.userName || ""}
-              onChange={handleChange}
-              required
+    setActivity([
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]);
+  };
+
+  return (
+    <div className="mb-28 mt-40 flex flex-col justify-center items-center max-w-screen-xl mx-auto">
+      <Helmet>
+        <title>Membership - ISO</title>
+        <meta
+          name="description"
+          content="Become a member of ISO organization"
+        />
+      </Helmet>
+      <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
+      <Formik
+        validationSchema={validation}
+        initialValues={{
+          userName: '',
+          userEmail: '',
+          activities: [],
+        }}
+        onSubmit={async (values) => {
+          axios
+            .post('https://iso-backend.herokuapp.com/user', {
+              inputs: values,
+              activity: activities,
+            })
+            .then((res) => {
+              console.log(res);
+              setIsloading(false);
+              setShowMessage(true);
+            })
+            .catch((err) => {
+              console.log(err);
+              setIsloading(false);
+              setShowError(true);
+            });
+        }}>
+        {({ errors, touched }) => (
+          <Form className="flex flex-col">
+            <label htmlFor="userName" className={labelStyle}>
+              Name
+            </label>
+            <Field
+              id="userName"
+              name="userName"
+              placeholder="Name"
               className={inputStyle}
             />
             {errors.userName && touched.userName ? (
