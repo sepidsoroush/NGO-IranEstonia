@@ -1,6 +1,7 @@
 import {Helmet} from 'react-helmet-async';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { UilCheck , UilExclamationOctagon } from '@iconscout/react-unicons';
 
 // JSX for styles
 const inputStyle ="border border-solid border-gray-300 rounded w-72 h-10 pl-2 my-1 ml-3";
@@ -21,6 +22,8 @@ const Membership = () => {
   const [inputs, setInputs] = useState({});
   const [activity,setActivity] = useState([false,false,false,false,false,false,false,false,false]);
   const [isloading , setIsloading] =useState(false);
+  const [showMessage , setShowMessage] = useState(false);
+  const [showError , setShowError ] =useState(false);
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -31,16 +34,20 @@ const Membership = () => {
     const updatedCheckbox = activity.map((item,index)=> index === position ? !item :item)
     setActivity(updatedCheckbox)
   }
-  console.log(activity);
+
   const handleSubmit = (event) => {
     setIsloading(true);
     event.preventDefault();
-    axios.post('https://iso-backend.herokuapp.com/user',{inputs:inputs,activity:activities}).then(
+    axios.post('localhost:3000',{inputs:inputs,activity:activities}).then(
       (res)=>{console.log(res);
-        setIsloading(false)}
+        setIsloading(false);
+        setShowMessage(true);
+      }
     ).catch(
       (err)=>{console.log(err);
-        setIsloading(false)}
+        setIsloading(false);
+        setShowError(true);
+      }
     );
     setInputs({});
     setActivity([false,false,false,false,false,false,false,false,false]);
@@ -53,7 +60,7 @@ const Membership = () => {
           <meta name='description' content='Become a member of ISO organization'/>
         </Helmet>
         <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
-        <form action="" className='flex flex-col'>
+        <form action='./Home.js' className='flex flex-col'>
           <label htmlFor="name">Enter your name
             <input
               type="text"
@@ -100,14 +107,17 @@ const Membership = () => {
           </ul>
 
           <div className='flex justify-center items-center'>
-            <input 
-              type='submit'
-              value={isloading ? 'Submiting...' : 'Submit'}
-              onClick={handleSubmit} 
-              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8 active:scale-90"
-              disabled={isloading}
-            />
+            <button
+            onClick={handleSubmit}
+            className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8 active:scale-90"
+            disabled={isloading}>
+              {isloading ? 'Submiting...' : 'Submit'}
+            </button> 
+              
+          
           </div>
+          {showMessage && <div className='text-green-700 border border-solid border-green-700 rounded p-2 mt-10 text-sm'><UilCheck className='inline-block' /> <span>Thank you for your participation. Your request submitted.</span> </div>}
+          {showError &&<div className='text-red-700 border border-solid border-red-700 rounded p-2 mt-10 text-center text-sm'><UilExclamationOctagon className='inline-block' /> <span>Oops, something wasn't right. Please try again.</span> </div>}
         </form>
       </div>
     );
