@@ -38,7 +38,7 @@ const Membership = () => {
   const handleSubmit = (event) => {
     setIsloading(true);
     event.preventDefault();
-    axios.post('localhost:3000',{inputs:inputs,activity:activities}).then(
+    axios.post('https://iso-backend.herokuapp.com/user',{inputs:inputs,activity:activities}).then(
       (res)=>{console.log(res);
         setIsloading(false);
         setShowMessage(true);
@@ -60,7 +60,7 @@ const Membership = () => {
           <meta name='description' content='Become a member of ISO organization'/>
         </Helmet>
         <h1 className="text-2xl font-semibold my-8">Become a member of ISO</h1>
-        <form action='./Home.js' className='flex flex-col'>
+        <form className='flex flex-col'>
           <label htmlFor="name">Enter your name
             <input
               type="text"
