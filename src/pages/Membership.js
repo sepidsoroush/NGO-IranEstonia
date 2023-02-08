@@ -32,7 +32,8 @@ const Membership = () => {
     { index: 8, name: 'journalism', label: 'Journalism' },
     { index: 9, name: 'other', label: 'Other' },
   ];
-  const [inputs, setInputs] = useState({});
+
+  const [isloading, setIsloading] = useState(false);
   const [activity, setActivity] = useState([
     false,
     false,
@@ -44,9 +45,6 @@ const Membership = () => {
     false,
     false,
   ]);
-  const [isloading, setIsloading] = useState(false);
-  const [showMessage, setShowMessage] = useState(false);
-  const [showError, setShowError] = useState(false);
 
   const handleCheckbox = (position) => {
     const updatedCheckbox = activity.map((item, index) =>
@@ -72,7 +70,7 @@ const Membership = () => {
           userEmail: '',
           activities: [],
         }}
-        onSubmit={async (values) => {
+        onSubmit={async (values , {resetForm}) => {
           axios
             .post('https://iso-backend.herokuapp.com/user', {
               inputs: values,
@@ -81,15 +79,12 @@ const Membership = () => {
             .then((res) => {
               console.log(res);
               setIsloading(false);
-              setShowMessage(true);
             })
             .catch((err) => {
               console.log(err);
               setIsloading(false);
-              setShowError(true);
             });
-            setInputs({});
-            setActivity([false,false,false,false,false,false,false,false,false]);
+            resetForm();
         }
         
         }>
@@ -135,7 +130,7 @@ const Membership = () => {
                   {item.label}
                 </label>
                 {errors.activities && touched.activities ? (
-                  <div>{errors.activities}</div>
+                  <div className={errorStyle}>{errors.activities}</div>
                 ) : null}
               </div>
             ))}
@@ -144,7 +139,7 @@ const Membership = () => {
               <button 
               type="submit"
               className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8 active:scale-90"
-              >Submit</button>
+              >{isloading ? "Submiting..." : "Submit" }</button>
             </div>
           </Form>
         )}
