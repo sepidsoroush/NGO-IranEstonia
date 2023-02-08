@@ -80,12 +80,12 @@ const Membership = () => {
               activity: activities,
             })
             .then((res) => {
-              console.log(res);
+              // console.log(res);
               setIsloading(false);
               setShowModal(true);
             })
             .catch((err) => {
-              console.log(err);
+              // console.log(err);
               setIsloading(false);
             });
             resetForm();
