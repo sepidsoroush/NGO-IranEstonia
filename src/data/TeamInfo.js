@@ -15,7 +15,7 @@ const TeamInfo = [
     {
         id:3,
         name: "Malihe Keshmiri",
-        position : "CONTACT PERSON & SPEAKER",
+        position : "COMMUNICATION MANAGER",
         image :profile
     },
     {
