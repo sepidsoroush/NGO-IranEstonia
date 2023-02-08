@@ -3,6 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
+import Modal from '../components/Modal';
 
 // JSX for styles
 const inputStyle =
@@ -33,6 +34,7 @@ const Membership = () => {
     { index: 9, name: 'other', label: 'Other' },
   ];
 
+  const [showModal, setShowModal] = useState(false);
   const [isloading, setIsloading] = useState(false);
   const [activity, setActivity] = useState([
     false,
@@ -71,6 +73,7 @@ const Membership = () => {
           activities: [],
         }}
         onSubmit={async (values , {resetForm}) => {
+          setIsloading(true);
           axios
             .post('https://iso-backend.herokuapp.com/user', {
               inputs: values,
@@ -79,6 +82,7 @@ const Membership = () => {
             .then((res) => {
               console.log(res);
               setIsloading(false);
+              setShowModal(true);
             })
             .catch((err) => {
               console.log(err);
@@ -137,14 +141,19 @@ const Membership = () => {
             ))}
 
             <div className='flex justify-center items-center'>
-              <button 
+              <button
+               
               type="submit"
-              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8 active:scale-90"
+              className="rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700  w-32 px-4 py-2 mt-8 active:scale-90 shadow hover:shadow-lg "
               >{isloading ? "Submiting..." : "Submit" }</button>
+              
             </div>
           </Form>
         )}
       </Formik>
+      <div>
+        {showModal ? <Modal /> : null}
+      </div>
     </div>
   );
 };
