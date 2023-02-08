@@ -85,6 +85,7 @@ const Membership = () => {
               setIsloading(false);
             });
             resetForm();
+            setActivity([false,false,false,false,false,false,false,false,false]);
         }
         
         }>
