@@ -1,5 +1,6 @@
 import { useState} from "react";
 import { Link } from "react-router-dom";
+import { UilCheckCircle } from '@iconscout/react-unicons';
 
 export default function Modal() {
   const [closeModal, setCloseModal] = useState(true);
@@ -14,7 +15,8 @@ export default function Modal() {
             {/*content*/}
             <div className=" rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
               {/*body*/}
-              <div className="relative p-6 flex-auto">
+              <div className="relative p-6 flex flex-col justify-center items-center">
+                <UilCheckCircle className='text-emerald-700 text-center' />
                 <p className="my-4 text-slate-700 text-lg leading-relaxed">
                 Thank you for your participation. Your request submitted. 
                 </p>

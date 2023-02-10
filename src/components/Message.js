@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import axios from 'axios';
+import Modal from '../components/Modal';
+import Error from '../components/Error';
 
 const Message = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState({});
   const [isloading , setIsloading] =useState(false);
 
@@ -13,13 +17,22 @@ const Message = () => {
   const handleSubmit = (event) => {
     setIsloading(true);
     event.preventDefault();
-    axios.post('https://iso-backend.herokuapp.com/contact',message).then(
-      (res)=>{console.log(res);
-        setIsloading(false)}
+    axios
+    .post('https://iso-backend.herokuapp.com/contact',message)
+    .then(
+      (res)=>{
+        // console.log(res);
+        setIsloading(false);
+        setShowModal(true);
+      }
     ).catch(
-      (err)=>{console.log(err);
-        setIsloading(false)}
+      (err)=>{
+        // console.log(err);
+        setIsloading(false);
+        setShowError(true);
+      }
     );
+    setMessage({});
   }
   return(
     <div>
@@ -54,6 +67,8 @@ const Message = () => {
           onClick={handleSubmit}  
           className='rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700 w-34 px-4 py-2 mt-8 text-base active:scale-90'/>
         </form>
+        <div>{showModal ? <Modal /> : null}</div>
+        <div>{showError ? <Error /> : null}</div>
     </div>
   );
   };
