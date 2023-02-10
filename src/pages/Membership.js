@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import Modal from '../components/Modal';
+import Error from '../components/Error';
 
 // JSX for styles
 const inputStyle =
@@ -34,6 +35,7 @@ const Membership = () => {
     { index: 9, name: 'other', label: 'Other' },
   ];
 
+  const [showError, setShowError] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isloading, setIsloading] = useState(false);
   const [activity, setActivity] = useState([
@@ -87,6 +89,7 @@ const Membership = () => {
             .catch((err) => {
               // console.log(err);
               setIsloading(false);
+              setShowError(true);
             });
             resetForm();
             setActivity([false,false,false,false,false,false,false,false,false]);
@@ -151,9 +154,8 @@ const Membership = () => {
           </Form>
         )}
       </Formik>
-      <div>
-        {showModal ? <Modal /> : null}
-      </div>
+      <div>{showModal ? <Modal /> : null}</div>
+      <div>{showError ? <Error /> : null}</div>
     </div>
   );
 };
