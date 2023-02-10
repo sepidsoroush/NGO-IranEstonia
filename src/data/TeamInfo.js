@@ -26,8 +26,8 @@ const TeamInfo = [
     },
     {
         id:5,
-        name: "Nima Sarabi",
-        position : "MARKETING & MEDIA MANAGER",
+        name: "Behnam Bakhtiari",
+        position : "PROGRAM MANAGER",
         image :profile
     },
     {
@@ -38,8 +38,8 @@ const TeamInfo = [
     },
     {
         id:7,
-        name: "Behnam Bakhtiari",
-        position : "PROGRAM MANAGER",
+        name: "Nima Sarabi",
+        position : "MARKETING & MEDIA MANAGER",
         image :profile
     }
 ];
