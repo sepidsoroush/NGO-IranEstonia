@@ -11,14 +11,16 @@ const SingleEvent = () => {
     const SelectedEvent = EventsInfo[id -1];
     const slideImages = SelectedEvent.image;
         return(
-        <div className=' flex flex-col justify-center items-center max-w-screen-xl mx-auto my-40'>
+        <div className=' flex flex-col justify-center items-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto mt-40 mb-20'>
             <Helmet>
                 <title>Events - ISO</title>
                 <meta name='description' content='Events of ISO organization'/>
             </Helmet>
-            <h2 className='text-2xl font-semibold'>{SelectedEvent.title}</h2>
-            <p className='m-10 '>{SelectedEvent.description}</p>
-            {slideImages.length===0 ? <p></p> :
+            <h2 className='text-xl font-semibold text-center'>{SelectedEvent.title}</h2>
+            <p className='text-sm text-gray-500'>{SelectedEvent.date}</p>
+            <p className='text-sm text-gray-500'>{SelectedEvent.location}</p>
+            <p className='mx-auto my-5 '>{SelectedEvent.description}</p>
+            {slideImages.length===0 ? null :
             <div className='max-w-xl w-full'>
                 <Slide >
                     {slideImages.map((slideImage, index)=> (
@@ -29,7 +31,7 @@ const SingleEvent = () => {
                 </Slide>
             </div>}
             
-            <Link to={`/events`} className='font-semibold mt-4 hover:bg-persian-indigo-700 hover:bg-opacity-10 transition duration-500 ease-in-out px-4 py-2 rounded'>Back</Link>
+            <Link to={`/events`} className='font-medium mt-4 hover:bg-persian-indigo-700 hover:bg-opacity-10 active:bg-persian-indigo-700 active:bg-opacity-10 transition duration-500 ease-in-out px-4 py-2 rounded shadow-md hover:shadow-lg'>Back</Link>
         </div>
         );
 };

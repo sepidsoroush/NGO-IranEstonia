@@ -6,7 +6,7 @@ const EventsInfo = [
     description:
       "Gathering in Tallinn to demand justice for Mahsa Amini.",
     contetnt :'',
-    location :'',
+    location :'Vabaduse väljak, Tallinn',
     link: 'https://www.facebook.com/events/618554329880225/?acontext=%7B%22event_action_history%22%3A[%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22left_rail%22%2C%22surface%22%3A%22bookmark%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22left_rail%22%2C%22surface%22%3A%22bookmark%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22calendar_past_events_unit%22%2C%22surface%22%3A%22bookmark_calendar%22%7D]%2C%22ref_notif_type%22%3Anull%7D',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-12%2016.54.19.jpeg?alt=media&token=670941f3-b6e8-4f8d-bef5-e1248b28881b' ,
     image: [
@@ -22,7 +22,7 @@ const EventsInfo = [
     title: 'Mahsa Amini memorial in Tartu',
     description: 'Demonstration in Tartu to show solidarity with the women of Iran.',
     contetnt :'',
-    location :'',
+    location :'Suudlevad Tudengid, Tartu',
     link: 'https://www.facebook.com/events/757419188658648/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A489296966398334%7D%7D]%22%7D',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/Mahsa%20Amini%20Memorial%20Tartu%2F14854010t1h3731.jpg?alt=media&token=9a8d96c3-7ab6-4749-8c0e-d268d4b0e87b' ,
     image: [
@@ -41,7 +41,7 @@ const EventsInfo = [
     title: 'Global Rally for Iran',
     description: 'Demonstration in Tallinn to show solidarity with the women of Iran.',
     contetnt :'',
-    location :'',
+    location :'Vabaduse väljak, Tallinn',
     link: '',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.48.22.jpeg?alt=media&token=ce35d8d6-c745-4ea8-b796-ff4357b3168b' ,
     image: [
@@ -57,7 +57,7 @@ const EventsInfo = [
     title: 'TLU solidarity with women of Iran',
     description: 'Participation and making speech about the portrait of Iranians and why the world should care about what is happening in Iran.',
     contetnt :'',
-    location :'',
+    location :'Tallinn University',
     link: 'https://www.facebook.com/events/1143158396629371/?acontext=%7B%22event_action_history%22%3A[%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22left_rail%22%2C%22surface%22%3A%22bookmark%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22left_rail%22%2C%22surface%22%3A%22bookmark%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22calendar_past_events_unit%22%2C%22surface%22%3A%22bookmark_calendar%22%7D]%2C%22ref_notif_type%22%3Anull%7D',
     poster : '' ,
     image: []
@@ -69,7 +69,7 @@ const EventsInfo = [
     title: 'Rally in Helsinki',
     description: 'Participation in rally in front of the IR embassy in Helsinki to ask for a regime change in Iran.',
     contetnt :'',
-    location :'',
+    location :'Embassy of IR Iran, Helsinki, Finland',
     link: '',
     poster : '' ,
     image: []
@@ -81,7 +81,7 @@ const EventsInfo = [
     title: 'Human Chain',
     description: 'Human chain in Tallinn in solidarity with people of Iran at the same time in more than 150 cities around the globe.',
     contetnt :'',
-    location :'',
+    location :'Vabaduse väljak, Tallinn',
     link: '',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.46.39.jpeg?alt=media&token=0e38639f-b022-410e-a92a-f0bfe171871b' ,
     image: [
@@ -149,7 +149,7 @@ const EventsInfo = [
     title: 'The Silent Massacre of November 2019',
     description: 'Remembering atrocities of the Islamic Republic',
     contetnt :'',
-    location :'',
+    location :'Vabaduse väljak, Tallinn',
     link: '',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.46.21.jpeg?alt=media&token=ed59c335-58a4-41b6-8ea1-1e7bf0898b2c' ,
     image: [
@@ -190,7 +190,7 @@ const EventsInfo = [
     title: 'Campus Rally for Iran',
     description: 'Rally at Tartu University Campus at the same time in more than 100 universities around the world.',
     contetnt :'',
-    location :'',
+    location :'University of Tartu',
     link: 'https://www.facebook.com/events/952606152377704/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A5614214251966363%7D%7D]%22%7D',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.46.14.jpeg?alt=media&token=6ad67f58-6cec-41e6-963d-ef196261dadd' ,
     image: [
@@ -223,7 +223,7 @@ const EventsInfo = [
     title: 'Christmas Market',
     description: 'Distributing gingerbreads in Tallinn Christmas Market to raise awareness about Iran.',
     contetnt :'',
-    location :'',
+    location :'Old Town, Tallinn',
     link: '',
     poster : '' ,
     image: []
@@ -271,7 +271,7 @@ const EventsInfo = [
     title: 'Rally against executions in Iran',
     description: 'Silent march and gathering in front of the Estonian Parliament in Tallinn to say No to Executions in Iran.',
     contetnt :'',
-    location :'',
+    location :'Parliament of Estonia',
     link: 'https://www.facebook.com/events/674974747460995/?acontext=%7B%22event_action_history%22%3A[%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22left_rail%22%2C%22surface%22%3A%22bookmark%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22left_rail%22%2C%22surface%22%3A%22bookmark%22%7D%2C%7B%22extra_data%22%3A%22%22%2C%22mechanism%22%3A%22calendar_past_events_unit%22%2C%22surface%22%3A%22bookmark_calendar%22%7D]%2C%22ref_notif_type%22%3Anull%7D',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2FTallinn_Poster_December%2017th.001.jpeg?alt=media&token=a9789f1f-dc98-464e-812d-70de0427a972' ,
     image: [
@@ -290,7 +290,7 @@ const EventsInfo = [
     description: 'Requesting Estonian residents to sign a petition to ask the President of Estonia not to invite the Islamic Republic ambassador to the Estonian Independence Day Celebration.',
     contetnt :'',
     location :'',
-    link: '',
+    link: 'https://rahvaalgatus.ee/initiatives/abec4b5e-f47f-47c5-8b92-c537175bf434',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -301,7 +301,7 @@ const EventsInfo = [
     title: 'Joulud',
     description: 'Distributing Iranian traditional sweet in Tartu to raise awareness about Iran.',
     contetnt :'',
-    location :'',
+    location :'Old Town, Tartu',
     link: '',
     poster : '',
     image: []
@@ -313,7 +313,7 @@ const EventsInfo = [
     title: 'PS752',
     description: 'An event at Tartu University to remembering 176 innocent passengers and crew of flight PS752 and other victims of the IRGC terrorists.',
     contetnt :'',
-    location :'',
+    location :'University of Tartu',
     link: 'https://www.facebook.com/events/5401330943306503/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A539910371489287%7D%7D]%22%7D',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.41.32.jpeg?alt=media&token=c25d6084-f1f8-43c6-8455-af3c8d5398f9' ,
     image: [
@@ -330,7 +330,7 @@ const EventsInfo = [
     title: 'Telliskivi photo exhibition',
     description: ' In the past 4 months, Iranian protesters have made it quite clear they consider the regime unreformable and are pursuing its demise, without a clear leader.Most of these pictures were taken by protesters during the last four months, but some of them show young victims brutally killed by the regime. It is the aim of this gallery to give audiences a real glimpse of what is happening in Iran and how young people are demanding rights and being suppressed, arrested, raped, and killed.The exhibition is organized in cooperation with the Iranian Supportive Organization (ISO).The exhibition is open 24/7 in Telliskivi Creative City. Three Tree Gallery from 4th of February until the end of March.',
     contetnt :'',
-    location :'',
+    location :'Telliskivi Creative City',
     link : 'https://fb.me/e/3hROkfjsc',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter2.jpeg?alt=media&token=9c6141ae-b76c-45ab-9af0-fc5e327f5352',
     image:
@@ -343,7 +343,7 @@ const EventsInfo = [
     title: 'Solidarity for a free Iran',
     description: 'On February 11th, we invite you to join us at Telliskivi Loomelinnak for a powerful and global gathering in support of the Iranian Revolution. This day marks the anniversary of the Islamic revolution in Iran which serves as a reminder of the struggles and agony that the Iranian people have faced for the past forty-four years. We will continue to march forward undeterred in our quest to bring an end to these four decades of oppression and misery.',
     contetnt :'',
-    location :'',
+    location :'Telliskivi Creative City',
     link : 'https://facebook.com/events/s/solidarity-for-a-free-iran/1231019314437347/',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter3.JPG?alt=media&token=077d5bda-ffc4-4a67-a658-2f802e46dec0',
     image:[

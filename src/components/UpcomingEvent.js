@@ -14,7 +14,7 @@ const UpcomingEvent = () => {
                     <div 
                     key={id}
                     className='p-6 flex flex-col sm:flex-row items-center ' >
-                        <img src={poster} alt="poster" className='w-64 h-64 border border-gray-200 object-scale-down shadow-md' />
+                        <img src={poster} alt="poster" className='w-72 h-72 border border-gray-200 object-scale-down shadow-md' />
                         <div className='flex flex-col sm:pl-5 pl-0 pt-5 sm:pt-0 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl items-center sm:items-start'>
                             <p className='text-xs pb-1 text-gray-600'>{date}</p>
                             <h2 className='text-lg font-bold'>{title}</h2>
