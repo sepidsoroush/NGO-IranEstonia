@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import Logo from "../data/Images/Logo.jpg";
-import { UilBars , UilMultiply } from '@iconscout/react-unicons';
+import { UilBars , UilMultiply , UilAngleDown } from '@iconscout/react-unicons';
 import { useState, useRef } from "react";
 
 const links = [
@@ -20,9 +20,9 @@ const logoStyle ='h-20 w-10';
 const titleStyle ='text-sm font-semibold text-persian-indigo-700 pl-4 w-28 text-justify';
 const logoContainer ='flex items-center justify-center'
 const buttonStyle ='md:hidden';
-const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white';
-const ulLinks = 'md:flex';
-const liLinks = 'md:px-0 md:py-2 md:mx-1 lg:px-1 xl:px-2 py-2 hover:scale-90';
+const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md';
+const ulLinks = 'md:flex cursor-pointer';
+const liLinks = ' md:py-2 md:px-1 lg:px-1 xl:px-2 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700 transition transition-all duration-300 ease-linear';
 
 const Navbar = () => {
   const [showLinks , setShowLinks] =useState(false);
