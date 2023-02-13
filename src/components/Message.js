@@ -95,37 +95,6 @@ const Message = () => {
           </Form>
         )}
       </Formik>
-        {/* <form action="" className=" flex flex-col items-center text-sm mx-2">
-          <input
-          type="name"
-          name='userName'
-          value={message.userName || ''}
-          onChange={handleChange}
-          placeholder="Name" 
-          required 
-          className="border border-solid divide-gray-300 w-80 h-10 pl-2 my-1"/>
-          <input 
-          type="email" 
-          name='userEmail'
-          value={message.userEmail || ""}
-          onChange={handleChange}
-          placeholder="Email Address" 
-          required
-          className="border border-solid divide-gray-300 w-80 h-10 pl-2 my-1"/>
-          <textarea 
-          
-          name='userMessage'
-          value={message.userMessage || ""}
-          onChange={handleChange} 
-          placeholder="Your Message" 
-          required
-          className="border border-solid  divide-gray-300 w-80 h-36 pl-2 pt-2 my-1 break-words"/>
-          <input 
-          type="submit"
-          value={isloading ? 'Submiting...' : 'Send Message'}
-          onClick={handleSubmit}  
-          className='rounded-full text-persian-indigo-700 border border-solid border-persian-indigo-700 w-34 px-4 py-2 mt-8 text-base active:scale-90'/>
-        </form> */}
         <div>{showModal ? <Modal /> : null}</div>
         <div>{showError ? <Error /> : null}</div>
     </div>
