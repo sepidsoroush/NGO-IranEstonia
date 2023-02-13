@@ -12,7 +12,7 @@ const Home = () => {
           <title>Home - ISO</title>
           <meta name='description' content='Home page of ISO organization'/>
         </Helmet>
-        <section className='flex items-center justify-center h-screen w-screen bg-fixed bg-center bg-cover overflow-x-hidden mt-28' style={{backgroundImage : `url('${Hero}')`}}>
+        <section className='flex items-center justify-center h-screen w-screen bg-fixed bg-center bg-cover overflow-x-hidden mt-28 ' style={{backgroundImage : `url('${Hero}')`}}>
           <div className='p-8 text-2xl text-white bg-persian-indigo-800 bg-opacity-50 flex flex-col float-left w-96'>
             <p className='text-5xl font-bold'>Iranian supportive organization</p>
             <hr className='border border-white my-4  w-16'/>

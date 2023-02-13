@@ -2,7 +2,7 @@ import {React , useState} from 'react';
 
 // JSX for styles
 const textStyle =" px-10";
-const titleStyle ="text-4xl font-semibold mb-8 pt-20 text-center";
+const titleStyle ="text-3xl font-semibold mb-8 pt-20 text-center";
 const btn = 'pl-2 text-persian-indigo-600'
 const AboutUs = () => {
   const [showMore, setShowMore] = useState(false);
