@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 
 const links = [
   {id : 1, url : '/', text : 'Home'},
-  {id : 2,url :'/events', text : 'Events' ,submenu : [
+  {id : 2, text : 'Actions' ,submenu : [
     {text : 'Events' , url:'/events'},
     {text : 'Activities' , url : '/activities'},
     {text : 'News' , url : '/news'}]},
@@ -25,7 +25,7 @@ const logoContainer ='flex items-center justify-center'
 const buttonStyle ='md:hidden';
 const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md';
 const ulLinks = 'md:flex cursor-pointer';
-const liLinks = ' md:py-2 md:px-1 lg:px-1 xl:px-2 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700 transition transition-all duration-300 ease-linear';
+const liLinks = ' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700 transition transition-all duration-300 ease-linear';
 
 const Navbar = () => {
   const [showLinks , setShowLinks] =useState(false);
@@ -54,7 +54,7 @@ const Navbar = () => {
                 const {id,url,text} =link;
                 return(
                   <li key={id} className={liLinks}>
-                    <Link to={url} onClick={toggleLinks}>{text}</Link>
+                    <Link to={url} onClick={toggleLinks}>{text}{Object.hasOwn(link,'submenu')? <UilAngleDown className='inline-block'/> : null}</Link>
                   </li>
                 );
               })}
