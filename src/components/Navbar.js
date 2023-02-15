@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 
 const links = [
   {id : 1, url : '/', text : 'Home'},
-  {id : 2, text : 'Actions' ,submenu : [
+  {id : 2,url :'/events', text : 'Events' ,submenu : [
     {text : 'Events' , url:'/events'},
     {text : 'Activities' , url : '/activities'},
     {text : 'News' , url : '/news'}]},
