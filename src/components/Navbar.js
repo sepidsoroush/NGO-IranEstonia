@@ -27,6 +27,19 @@ const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all
 const ulLinks = 'md:flex cursor-pointer';
 const liLinks = ' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700 transition transition-all duration-300 ease-linear';
 
+const  DropDown = () =>{
+  const menuItems = links[1].submenu;
+  return(
+    <ul>
+      {menuItems.map((submenu , index)=>(
+        <li key={index} >
+          <Link to={submenu.url}>{submenu.text}</Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 const Navbar = () => {
   const [showLinks , setShowLinks] =useState(false);
   const linksContainerRef = useRef(null);
@@ -59,6 +72,7 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <DropDown />
           </div>
         </div>
       <Outlet />
