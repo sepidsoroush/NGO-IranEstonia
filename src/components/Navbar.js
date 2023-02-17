@@ -23,10 +23,9 @@ const logoStyle ='h-20 w-10';
 const titleStyle ='text-sm font-semibold text-persian-indigo-700 pl-4 w-28 text-justify';
 const logoContainer ='flex items-center justify-center'
 const buttonStyle ='md:hidden';
-const linksContainer ='md:!h-auto  h-0 overflow-hidden transition transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md';
+const linksContainer ='md:!h-auto  h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md';
 const ulLinks = 'md:flex cursor-pointer';
 const liLinks = ' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700 transition transition-all duration-300 ease-linear';
-
 
 
 const Navbar = () => {
@@ -43,13 +42,13 @@ const Navbar = () => {
   }
   const linkStyle = { height: showLinks ? `${linksRef.current.getBoundingClientRect().height}px` : '0px' , marginBottom : '5px' , paddingLeft : '10px'};
 
-  // const dropDownStyle ={display : dropdown ? `$'none'` : `$'flex'` }
+  const dropDownStyle ={display : dropdown ? 'flex' : 'none'  }
   const  DropDown = () =>{
     const menuItems = links[1].submenu;
     return(
-      <ul className='absolute text-gray-600 bg-white pb-2 px-3 shadow-lg' >
+      <ul className='absolute text-gray-600 bg-white px-3 py-1 shadow-lg text-sm transition-all duration-300 ease-linear flex flex-col' style={dropDownStyle} >
         {menuItems.map((submenu , index)=>(
-          <li key={index} className='py-1'>
+          <li key={index} className='py-2'>
             <Link to={submenu.url}>{submenu.text}</Link>
           </li>
         ))}
@@ -74,12 +73,13 @@ const Navbar = () => {
               {links.map((link)=>{
                 const {id,url,text} =link;
                 return(
-                  <div >
+                  <div>
                     {Object.hasOwn(link,'submenu')?
-                      <li key={id} className={liLinks}>
-                        <Link to={url} onClick={toggleLinks}>
-                          {text}<UilAngleDown className='inline-block' /><DropDown />
+                      <li key={id} className={liLinks} >
+                        <Link to={url} onClick={toggleDropDown}>
+                          {text}<UilAngleDown className='inline-block' />
                         </Link>
+                        <DropDown />
                       </li> :
                       <li key={id} className={liLinks}>
                         <Link to={url} onClick={toggleLinks}>
