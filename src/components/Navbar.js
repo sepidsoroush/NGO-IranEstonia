@@ -51,7 +51,7 @@ const Navbar = () => {
               {showLinks? <UilMultiply /> : <UilBars />}
             </button>
           </div>
-          <div className='md:!h-auto h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md ' style={{display : showLinks? 'flex' : 'none' , height: 'auto' , marginBottom : '5px' , paddingLeft : '10px'}} ref={linksContainerRef}>
+          <div className='md:!h-auto h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md md:!flex' style={{display : showLinks? 'flex' : 'none' , height: 'auto' , marginBottom : '5px' , paddingLeft : '10px'}} ref={linksContainerRef}>
             <ul className='md:flex cursor-pointer' ref={linksRef}>
               {links.map((link)=>{
                 const {id,url,text} =link;
