@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import Logo from "../data/Images/Logo.jpg";
 import { UilBars , UilMultiply , UilAngleDown } from '@iconscout/react-unicons';
-import { useState, useRef } from "react";
+import { useState , useRef , useEffect} from "react";
 
 const links = [
   {id : 1, url : '/', text : 'Home'},
@@ -15,16 +15,37 @@ const links = [
   {id : 6 , url : '/donate' , text : 'Donation'}
 ];
 
+const useOutsideClick = (ref, callback) => {
+  const handleClick = e => {
+    if (ref.current && !ref.current.contains(e.target)) {
+      callback();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  });
+};
+
+
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const [showLinks , setShowLinks] =useState(false);
-  const linksContainerRef = useRef(null);
-  const linksRef = useRef(null);
+
+  const ref = useRef();
+  useOutsideClick(ref, () => {
+     setDropdown(false);
+  });
+
 
   const  DropDown = () =>{
     const menuItems = links[1].submenu;
     return(
-      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1  flex flex-col bg-white' style={{display : dropdown ? 'flex' : 'none'}} >
+      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1 flex flex-col bg-white' style={{display : dropdown ? 'flex' : 'none'}} >
         {menuItems.map((submenu , index)=>(
           <li key={index} className='py-2 px-5 md:px-0 '>
             <Link
@@ -40,7 +61,7 @@ const Navbar = () => {
 }
 
   return (
-    <nav className='fixed top-0 z-50 w-screen h-28 box-border text-gray-600 bg-white shadow-lg'>
+    <nav className='fixed top-0 z-50 w-screen h-28 box-border text-gray-600 bg-white shadow-lg' ref={ref}>
         <div className='md:max-w-6xl md:my-0 md:mx-auto md:flex md:items-center md: justify-between md:p-4'>
           <div className='md:p-0 flex items-center justify-between p-4 '>
             <a href="/" className='flex items-center justify-center'>
@@ -51,8 +72,10 @@ const Navbar = () => {
               {showLinks? <UilMultiply /> : <UilBars />}
             </button>
           </div>
-          <div className='md:!h-auto h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md md:!flex' style={{display : showLinks? 'flex' : 'none' , height: 'auto' , marginBottom : '5px' , paddingLeft : '10px'}} ref={linksContainerRef}>
-            <ul className='md:flex cursor-pointer' ref={linksRef}>
+          <div 
+          className='md:!h-auto h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md md:!flex' 
+          style={{display : showLinks? 'flex' : 'none' , height: 'auto' , marginBottom : '5px' , paddingLeft : '10px'}} >
+            <ul className='md:flex cursor-pointer'>
               {links.map((link)=>{
                 const {id,url,text} =link;
                 return(
