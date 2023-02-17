@@ -24,9 +24,9 @@ const Navbar = () => {
   const  DropDown = () =>{
     const menuItems = links[1].submenu;
     return(
-      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1  text-sm  flex flex-col bg-white  border-b border-gray-200' style={{display : dropdown ? 'flex' : 'none'}} >
+      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1  flex flex-col bg-white' style={{display : dropdown ? 'flex' : 'none'}} >
         {menuItems.map((submenu , index)=>(
-          <li key={index} className='py-2 px-5 md:px-0'>
+          <li key={index} className='py-2 px-5 md:px-0 '>
             <Link
             to={submenu.url}
             onClick={()=>{
@@ -58,11 +58,11 @@ const Navbar = () => {
                 return(
                   <div>
                     {Object.hasOwn(link,'submenu')?
-                      <li key={id} className=' md:py-2 md:pl-1 lg:pl-2 xl:pl-3 py-2 pr-0 md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700'>
+                      <li key={id} className=' md:py-2 md:pl-1 lg:pl-2 xl:pl-3 py-2 pr-0 md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 '>
                         <Link to={url} onClick={()=>(setDropdown(!dropdown))}>
-                          {text}<UilAngleDown className='inline-block h-5 px-0' />
+                          {text}<UilAngleDown className='inline-block h-5 px-0' style={{transform: dropdown ? 'rotate(180deg)' : ''}} />
                         </Link>
-                        <DropDown className='transition-all duration-500 ease-linear' />
+                        <DropDown />
                       </li> :
                       <li key={id} className=' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700   transition-all duration-300 ease-linear'>
                         <Link to={url} onClick={()=>(setShowLinks(!showLinks))}>
