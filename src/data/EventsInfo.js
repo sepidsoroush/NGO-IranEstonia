@@ -42,7 +42,6 @@ const EventsInfo = [
     description: 'Demonstration in Tallinn to show solidarity with the women of Iran.',
     contetnt :'',
     location :'Vabaduse väljak, Tallinn',
-    link: '',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.48.22.jpeg?alt=media&token=ce35d8d6-c745-4ea8-b796-ff4357b3168b' ,
     image: [
       'https://firebasestorage.googleapis.com/v0/b/isobackend.appspot.com/o/Tallinn%20Protest%2001.10.2022%2F20221001_1.jpg?alt=media&token=916bd5f7-7ed4-4cba-b97b-a0382387a852',
@@ -70,7 +69,6 @@ const EventsInfo = [
     description: 'Participation in rally in front of the IR embassy in Helsinki to ask for a regime change in Iran.',
     contetnt :'',
     location :'Embassy of IR Iran, Helsinki, Finland',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -82,7 +80,6 @@ const EventsInfo = [
     description: 'Human chain in Tallinn in solidarity with people of Iran at the same time in more than 150 cities around the globe.',
     contetnt :'',
     location :'Vabaduse väljak, Tallinn',
-    link: '',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.46.39.jpeg?alt=media&token=0e38639f-b022-410e-a92a-f0bfe171871b' ,
     image: [
       'https://firebasestorage.googleapis.com/v0/b/isobackend.appspot.com/o/Human%20Chain%2F20221029_5.jpg?alt=media&token=74c4768e-80ef-447d-befd-a989c86af664',
@@ -102,7 +99,6 @@ const EventsInfo = [
     description: 'Street art in Tallinn in solidarity with people of Iran.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -114,7 +110,6 @@ const EventsInfo = [
     description: 'Maaleht interview with one of the members of the campaign.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -126,7 +121,6 @@ const EventsInfo = [
     description: 'A. Greisbeck interview with one of the members of the campaign.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -138,7 +132,6 @@ const EventsInfo = [
     description: 'TLU Podcast interview with one of the members of the campaign.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -150,7 +143,6 @@ const EventsInfo = [
     description: 'Remembering atrocities of the Islamic Republic',
     contetnt :'',
     location :'Vabaduse väljak, Tallinn',
-    link: '',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fphoto_2023-02-10%2017.46.21.jpeg?alt=media&token=ed59c335-58a4-41b6-8ea1-1e7bf0898b2c' ,
     image: [
     'https://firebasestorage.googleapis.com/v0/b/isobackend.appspot.com/o/Bloody%20november%2F20221119_1.jpg?alt=media&token=303dd441-3918-4966-9da0-3fa142d611e0' ,
@@ -167,7 +159,6 @@ const EventsInfo = [
     description: 'Distributing pixels in Tallinn to raise awareness about Iranian women in the international day for the elimination of violence against women.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -179,7 +170,6 @@ const EventsInfo = [
     description: 'Distributing pixels in Tallinn Dark Nights Film Festival to raise awareness about Iran.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -212,7 +202,6 @@ const EventsInfo = [
     description: 'Delfi interview with one of the members of the campaign.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -224,7 +213,6 @@ const EventsInfo = [
     description: 'Distributing gingerbreads in Tallinn Christmas Market to raise awareness about Iran.',
     contetnt :'',
     location :'Old Town, Tallinn',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -236,7 +224,6 @@ const EventsInfo = [
     description: 'Distributing pixels in Tallinn Amber Prize Event to raise awareness about Iran.',
     contetnt :'',
     location :'',
-    link: '',
     poster : '' ,
     image: []
     ,type : "Activity"
@@ -249,7 +236,6 @@ const EventsInfo = [
     poster : '' ,
     contetnt :'',
     location :'',
-    link: '',
     image: []
     ,type : "Activity"
   },
@@ -261,7 +247,6 @@ const EventsInfo = [
     poster : '' ,
     contetnt :'',
     location :'',
-    link: '',
     image: []
     ,type : "Activity"
   },
@@ -302,7 +287,6 @@ const EventsInfo = [
     description: 'Distributing Iranian traditional sweet in Tartu to raise awareness about Iran.',
     contetnt :'',
     location :'Old Town, Tartu',
-    link: '',
     poster : '',
     image: []
     ,type : "Activity"
