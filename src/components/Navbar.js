@@ -33,23 +33,21 @@ const Navbar = () => {
   const [showLinks , setShowLinks] =useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
-  const toggleLinks = () =>{
-    setShowLinks(!showLinks);
-  };
-  const toggleDropDown =() => {
-    setShowLinks(!showLinks);
-    setDropdown(!dropdown);
-  }
   const linkStyle = { height: showLinks ? `${linksRef.current.getBoundingClientRect().height}px` : '0px' , marginBottom : '5px' , paddingLeft : '10px'};
 
-  const dropDownStyle ={display : dropdown ? 'flex' : 'none'  }
+  const dropDownStyle ={display : dropdown ? 'flex' : 'none' , position: dropdown? 'absolute' : 'relative' }
   const  DropDown = () =>{
     const menuItems = links[1].submenu;
     return(
-      <ul className='absolute text-gray-600 bg-white px-3 py-1 shadow-lg text-sm transition-all duration-300 ease-linear flex flex-col' style={dropDownStyle} >
+      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1 shadow-sm md:shadow-lg text-sm transition-all duration-300 ease-linear flex flex-col bg-white' style={dropDownStyle} >
         {menuItems.map((submenu , index)=>(
           <li key={index} className='py-2'>
-            <Link to={submenu.url}>{submenu.text}</Link>
+            <Link
+            to={submenu.url}
+            onClick={()=>{
+              setShowLinks(!showLinks);
+              setDropdown(!dropdown);}}
+            >{submenu.text}</Link>
           </li>
         ))}
       </ul>
@@ -64,7 +62,7 @@ const Navbar = () => {
               <img src={Logo} alt="Logo" className={logoStyle}/>
               <span className={titleStyle}>Iranian supportive organization</span>
             </a>
-            <button onClick={toggleLinks} className={buttonStyle}>
+            <button onClick={()=>(setShowLinks(!showLinks))} className={buttonStyle}>
               {showLinks? <UilMultiply /> : <UilBars />}
             </button>
           </div>
@@ -75,14 +73,14 @@ const Navbar = () => {
                 return(
                   <div>
                     {Object.hasOwn(link,'submenu')?
-                      <li key={id} className={liLinks} >
-                        <Link to={url} onClick={toggleDropDown}>
+                      <li key={id} className={liLinks}>
+                        <Link to={url} onClick={()=>(setDropdown(!dropdown))}>
                           {text}<UilAngleDown className='inline-block' />
                         </Link>
-                        <DropDown />
+                        <DropDown className='inline' />
                       </li> :
                       <li key={id} className={liLinks}>
-                        <Link to={url} onClick={toggleLinks}>
+                        <Link to={url} onClick={()=>(setShowLinks(!showLinks))}>
                           {text}
                         </Link>
                       </li>
