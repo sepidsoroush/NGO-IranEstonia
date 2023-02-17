@@ -24,9 +24,9 @@ const Navbar = () => {
   const  DropDown = () =>{
     const menuItems = links[1].submenu;
     return(
-      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1 shadow-sm md:shadow-lg text-sm transition-all duration-300 ease-linear flex flex-col bg-white' style={{display : dropdown ? 'flex' : 'none' , position: dropdown? 'absolute' : 'relative' }} >
+      <ul className='md:absolute relative text-gray-600  md:px-3 xl:px-4 py-1  text-sm  flex flex-col bg-white  border-b border-gray-200' style={{display : dropdown ? 'flex' : 'none'}} >
         {menuItems.map((submenu , index)=>(
-          <li key={index} className='py-2'>
+          <li key={index} className='py-2 px-5 md:px-0'>
             <Link
             to={submenu.url}
             onClick={()=>{
@@ -51,20 +51,20 @@ const Navbar = () => {
               {showLinks? <UilMultiply /> : <UilBars />}
             </button>
           </div>
-          <div className='md:!h-auto  h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md' style={{ height: showLinks ? `${linksRef.current.getBoundingClientRect().height}px` : '0px' , marginBottom : '5px' , paddingLeft : '10px'}} ref={linksContainerRef}>
+          <div className='md:!h-auto h-0 overflow-hidden transition-all duration-300 ease-linear bg-white md:shadow-none  shadow-md ' style={{display : showLinks? 'flex' : 'none' , height: 'auto' , marginBottom : '5px' , paddingLeft : '10px'}} ref={linksContainerRef}>
             <ul className='md:flex cursor-pointer' ref={linksRef}>
               {links.map((link)=>{
                 const {id,url,text} =link;
                 return(
                   <div>
                     {Object.hasOwn(link,'submenu')?
-                      <li key={id} className=' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700  transition-all duration-300 ease-linear'>
+                      <li key={id} className=' md:py-2 md:pl-1 lg:pl-2 xl:pl-3 py-2 pr-0 md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700'>
                         <Link to={url} onClick={()=>(setDropdown(!dropdown))}>
-                          {text}<UilAngleDown className='inline-block' />
+                          {text}<UilAngleDown className='inline-block h-5 px-0' />
                         </Link>
-                        <DropDown className='inline' />
+                        <DropDown className='transition-all duration-500 ease-linear' />
                       </li> :
-                      <li key={id} className=' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700 active:text-persian-indigo-700  transition-all duration-300 ease-linear'>
+                      <li key={id} className=' md:py-2 md:px-1 lg:px-2 xl:px-3 py-2  md:border-b-4 md:border-transparent md:hover:border-b-4 md:hover:border-persian-indigo-700   transition-all duration-300 ease-linear'>
                         <Link to={url} onClick={()=>(setShowLinks(!showLinks))}>
                           {text}
                         </Link>
