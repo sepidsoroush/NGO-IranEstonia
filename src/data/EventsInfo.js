@@ -366,7 +366,7 @@ const EventsInfo = [
     id: 26,
     date :'07 January 2023',
     title: ' The emotional commemoration of the plane crash combined hard work with fighting spirit',
-    description: '',
+    description: 'Many may have already forgotten that just three years ago, the military of the Islamic regime of Iran shot down a Ukrainian airliner Boeing 737-800, killing all 176 passengers and crew. The Iranian and Ukrainian community in Tartu remembered the incident with an emotional memorial event.',
     content :'',
     location :'',
     link: 'https://tartu.postimees.ee/7686225/lennukatastoofi-tundekullane-malestusuritus-uhendas-harduse-voitlusvaimuga',
