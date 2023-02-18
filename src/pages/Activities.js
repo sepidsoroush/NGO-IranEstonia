@@ -28,6 +28,7 @@ const Activities = () => {
                                 className='bg-white text-sm shadow-md border border-persian-indigo-50 p-3  rounded active:bg-persian-indigo-50 active:opacity-80 mb-4' 
                                 href={link}
                                 target='_blank'
+                                rel="noreferrer"
                                 >Read more about it
                             </a> : null}
                         </div>

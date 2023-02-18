@@ -19,7 +19,8 @@ const SingleEvent = () => {
             <h2 className='text-xl font-semibold text-center'>{SelectedEvent.title}</h2>
             <p className='text-sm text-gray-500'>{SelectedEvent.date}</p>
             <p className='text-sm text-gray-500'>{SelectedEvent.location}</p>
-            <p className='mx-auto my-5 '>{SelectedEvent.description}</p>
+            
+            <p className='text-md mx-auto my-5'>{SelectedEvent.content}</p>
             {slideImages.length===0 ? null :
             <div className='max-w-xl w-full'>
                 <Slide >
