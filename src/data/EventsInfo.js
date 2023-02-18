@@ -106,9 +106,10 @@ const EventsInfo = [
   {
     id: 8,
     date :'07 November 2022',
-    title: 'Press Interview',
+    title: 'Maaleht Interview',
     description: 'Maaleht interview with one of the members of the campaign.',
     content :'',
+    link : 'https://maaleht.delfi.ee/artikkel/120091190/eestis-elav-iraanlanna-kodumaal-valitsevast-olukorrast-ma-tahan-karjuda',
     location :'',
     poster : '' ,
     image: []
@@ -128,9 +129,10 @@ const EventsInfo = [
   {
     id: 10,
     date :'17 November 2021',
-    title: 'Press Interview',
+    title: 'TLU Podcast interview',
     description: 'TLU Podcast interview with one of the members of the campaign.',
     content :'',
+    link : 'https://www.linkedin.com/posts/anitagriesbeck_jinjiyanazadi-humanrights-iranrevolution-activity-6996088049436614656-Tfrx?utm_source=share&utm_medium=member_ios',
     location :'',
     poster : '' ,
     image: []
@@ -198,9 +200,10 @@ const EventsInfo = [
   {
     id: 15,
     date :'01 December 2022',
-    title: 'Press Interview',
+    title: 'Delfi Interview',
     description: 'Delfi interview with one of the members of the campaign.',
     content :'',
+    link : 'https://maaleht.delfi.ee/artikkel/120115206/palju-noori-on-tapetud-vaikselt-tana-marsitakse-vaikides-toompeal-et-avaldada-toetust-iraani-rahvale',
     location :'',
     poster : '' ,
     image: []
@@ -231,9 +234,10 @@ const EventsInfo = [
   {
     id: 18,
     date :'12 December 2022',
-    title: 'Press Interview',
+    title: 'ERR TV interview',
     description: 'ERR TV interview with two of the members of the campaign.',
     poster : '' ,
+    link : 'https://etv.err.ee/1608806992/ringvaade' ,
     content :'',
     location :'',
     image: []
@@ -242,9 +246,10 @@ const EventsInfo = [
   {
     id: 19,
     date :'14 December 2022',
-    title: 'Press Interview',
+    title: 'Feministeerium interview',
     description: 'Feministeerium interview with one of the members of the campaign.',
     poster : '' ,
+    link : 'https://feministeerium.ee/ru/%d0%bd%d0%b0%d1%81%d0%b8%d0%bb%d0%b8%d0%b5-%d0%bd%d0%b0%d0%b4-%d0%be%d0%b4%d0%bd%d0%be%d0%b9-%d0%bd%d0%b0%d1%81%d0%b8%d0%bb%d0%b8%d0%b5-%d0%bd%d0%b0%d0%b4-%d0%b2%d1%81%d0%b5%d0%bc%d0%b8/',
     content :'',
     location :'',
     image: []
@@ -339,19 +344,55 @@ const EventsInfo = [
     ,type : "Past Events"
   },
   {
-    id: 28,
-    date :'08 February 2023',
-    title: 'Kuku afternoon: Bianka Soe talks about the exhibition «Women. Life. Freedom that is happening in Iran',
-    description: "The exhibition Women. Life. Freedom, what's happening in Iran is open in the Three Trees gallery of Telliskivi's creative campus. Telliskivi creative campus content manager Bianka Soe tells more about the exhibition.",
+    id: 26,
+    date :'24 September 2022',
+    title: 'Mahsa Amini memorial in Tartu',
+    description: '«Woman, life, freedom!» Several dozen Iranians gathered in the town square to protest',
     content :'',
-    location :'',
-    link: 'https://kuku.pleier.ee/podcast/kuku-parastlouna/151954?fbclid=PAAab-sRjeSdDSqR3R5Y6v6kyxT1_hWgJI6wvBVlbi817VwE-7IEJZ2KGisiM',
-    poster : '' ,
+    location :'Tartu',
+    link : 'https://tartu.postimees.ee/7612509/pildid-ja-video-naine-elu-vabadus-mitukummend-iraanlast-kogunes-raeplatsile-meelt-avaldama',
+    poster : '',
     image: []
     ,type : "news"
   },
   {
     id: 27,
+    date :'01 October 2022',
+    title: 'A demonstration was held in Tallinn to protect the rights of Iranian women',
+    description: "At four o'clock today, a demonstration for the protection of Iranian women's rights began on Freedom Square in Tallinn. Demonstrations are taking place around the world, protesters are demanding the overthrow of the Iranian regime.",
+    content :'',
+    link: 'https://www.delfi.ee/artikkel/120076132/fotod-tallinnas-toimus-meeleavaldus-iraani-naiste-oiguste-kaitseks',
+    location :'Old Town, Tartu',
+    poster : '',
+    image: []
+    ,type : "news"
+  },
+  {
+    id: 28,
+    date :'29 November 2022',
+    title: 'Human Chain in Tallinn',
+    description: 'A human chain was formed in the Freedom Square in support of the Iranian people',
+    content :'',
+    location :'Tartu',
+    link : 'https://www.delfi.ee/artikkel/120090500/fotod-vabaduse-valjakul-moodustati-iraani-rahva-toetuseks-inimkett',
+    poster : '',
+    image: []
+    ,type : "news"
+  },
+  {
+    id: 29,
+    date :'07 January 2023',
+    title: ' The emotional commemoration of the plane crash combined hard work with fighting spirit',
+    description: 'Many may have already forgotten that just three years ago, the military of the Islamic regime of Iran shot down a Ukrainian airliner Boeing 737-800, killing all 176 passengers and crew. The Iranian and Ukrainian community in Tartu remembered the incident with an emotional memorial event.',
+    content :'',
+    location :'',
+    link: 'https://tartu.postimees.ee/7686225/lennukatastoofi-tundekullane-malestusuritus-uhendas-harduse-voitlusvaimuga',
+    poster : '' ,
+    image: []
+    ,type : "news"
+  },
+  {
+    id: 30,
     date :'01 February 2023',
     title: 'The Ministry of Foreign Affairs summoned the Iranian ambassador',
     description: "On Wednesday, the Estonian Foreign Ministry summoned the Iranian ambassador to strongly condemn Iran's support for Russia in its aggression against Ukraine and the large-scale human rights violations taking place in Iran.",
@@ -363,13 +404,13 @@ const EventsInfo = [
     ,type : "news"
   },
   {
-    id: 26,
-    date :'07 January 2023',
-    title: ' The emotional commemoration of the plane crash combined hard work with fighting spirit',
-    description: 'Many may have already forgotten that just three years ago, the military of the Islamic regime of Iran shot down a Ukrainian airliner Boeing 737-800, killing all 176 passengers and crew. The Iranian and Ukrainian community in Tartu remembered the incident with an emotional memorial event.',
+    id: 31,
+    date :'08 February 2023',
+    title: 'Kuku afternoon: Bianka Soe talks about the exhibition «Women. Life. Freedom that is happening in Iran',
+    description: "The exhibition Women. Life. Freedom, what's happening in Iran is open in the Three Trees gallery of Telliskivi's creative campus. Telliskivi creative campus content manager Bianka Soe tells more about the exhibition.",
     content :'',
     location :'',
-    link: 'https://tartu.postimees.ee/7686225/lennukatastoofi-tundekullane-malestusuritus-uhendas-harduse-voitlusvaimuga',
+    link: 'https://kuku.pleier.ee/podcast/kuku-parastlouna/151954?fbclid=PAAab-sRjeSdDSqR3R5Y6v6kyxT1_hWgJI6wvBVlbi817VwE-7IEJZ2KGisiM',
     poster : '' ,
     image: []
     ,type : "news"
