@@ -310,7 +310,7 @@ const EventsInfo = [
   },
   {
     id: 24,
-    date :'04 February - 30 March 2023',
+    date :'04 February - 22 March 2023',
     title: 'Telliskivi photo exhibition',
     description: ' In the past 4 months, Iranian protesters have made it quite clear they consider the regime unreformable and are pursuing its demise, without a clear leader.Most of these pictures were taken by protesters during the last four months, but some of them show young victims brutally killed by the regime. It is the aim of this gallery to give audiences a real glimpse of what is happening in Iran and how young people are demanding rights and being suppressed, arrested, raped, and killed.The exhibition is organized in cooperation with the Iranian Supportive Organization (ISO).The exhibition is open 24/7 in Telliskivi Creative City. Three Tree Gallery from 4th of February until the end of March.',
     content :'',
