@@ -19,15 +19,16 @@ const Home = () => {
             <p className='text-base text-justify'>Join ISO and work with other Iranian people in Estonia to spread awareness about Iran and create a supportive community for Iranians in Estonia!</p>
           </div>
         </section>
+        <section className='flex flex-col justify-center items-center  mx-auto  bg-gradient-to-b from-transparent to-persian-indigo-50 '>
+          <UpcomingEvent />
+        </section>
         <section className='md:max-w-6xl mx-auto'>
           <AboutUs/>
           <OurStory />
         </section>
-        <section className='flex flex-col justify-center items-center  mx-auto  bg-gradient-to-b from-transparent to-persian-indigo-50 '>
-          <UpcomingEvent />
-        </section>
-        <section className=' mb-20 md:max-w-6xl mx-auto'>
-          <h1 className="text-3xl font-semibold mb-8 pt-20 text-center">Lets Create Something Great Together!</h1>
+        <div className='bg-gradient-to-r from-persian-indigo-100 via-persian-indigo-700 to-persian-indigo-100 md:max-w-6xl mx-auto h-3 my-20'></div>
+        <section className=' mb-10 md:max-w-6xl mx-auto'>
+          <h1 className="text-3xl font-semibold my-10 text-center">Lets Create Something Great Together!</h1>
           <Message />
         </section>
       </div>

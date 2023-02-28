@@ -435,11 +435,10 @@ const EventsInfo = [
     description: '',
     content :'',
     location :'',
-    link : '',
     poster : '',
     image:
     []
-    ,type : "Activity"
+    ,type : ""
   },
   {
     id: 34,
