@@ -414,7 +414,72 @@ const EventsInfo = [
     poster : '' ,
     image: []
     ,type : "news"
-  }
+  },
+  {
+    id: 32,
+    date :'01 March - 01 April 2023',
+    title: 'Art in Protest',
+    description: 'The posters gallery on the "Woman, Life, Freedom" in "Astra building, Tallinn University" aims to draw attention to the ongoing revolutionary movement in Iran.',
+    content :"The posters gallery on the Woman, Life, Freedom in Astra building, Tallinn University aims to draw attention to the ongoing revolutionary movement in Iran. Some of the artists whose works are on display include Gianluca Costantini, Marco Melgrati, Maryam Salimian, Farzaneh, and Mahdi Ghazi. The matter of women, life, and freedom is a critical issue that has been at the forefront of social and political discourse in Iran. Women in Iran continue to face various forms of discrimination, violence, and oppression. The gallery sheds light on the efforts of the women's movement to challenge the status quo and promote a more inclusive and equitable society that values women's rights and freedoms. It is worth noting that the artists inside Iran remain anonymous due to concerns for their security. Despite the challenges, they continue to use their creativity and artistry to make their voices heard and contribute to the ongoing struggle for women's rights and freedom in Iran. The gallery celebrates the power of art as a tool for social change and encourages viewers to reflect on their role in the fight for gender equality and justice.",
+    location :'Astra building, Tallinn University',
+    link : '',
+    poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-01march.jpeg?alt=media&token=f5590b15-e8d0-4b9e-a296-756ba23c2d89',
+    image:
+    []
+    ,type : "Upcoming Events"
+  },
+  {
+    id: 33,
+    date :'02 March 2023',
+    title: '',
+    description: '',
+    content :'',
+    location :'',
+    link : '',
+    poster : '',
+    image:
+    []
+    ,type : "Activity"
+  },
+  {
+    id: 34,
+    date :'06 March 2023',
+    title: 'Mondo Akadeemia: Women, life, freedom',
+    description: "On this International Women's Day, Mondo invites you to discuss the situation in Iran today, where people are fighting for women's rights.",
+    content :"On this International Women's Day, Mondo invites you to discuss the situation in Iran today, where people are fighting for women's rights. The biggest protests against the Islamic Republic's dictatorship in Iran in recent decades are about women's rights and freedoms. The protests began in September 2022 after the death of 22-year-old Mahsa Amin. The woman did not wear the hijab in accordance with government standards, was arrested, beaten, and died two days later of internal bleeding. The protests spread across the country and turned into a nationwide movement against the regime of the Islamic Republic. Many people were killed or arrested in unarmed protests. The protests in Iran continue. We will focus on the situation in the country today, but also look back at what preceded the protests. We will discuss how the message Zan, Zendegi, Azadi - Women, Life, Freedom has spread around the world, being more universal than one might think. The panelists are: Kristi Ockba, Mondo's expert on Middle East Susanna Veevo, author of “My Iran. Stolen freedom” Maliheh Keshmiri, Iranian Supportive Organization in Estonia. The event is in English and will take place at the Mondo in Telliskivi Creative City, Tallinn. You are also welcome to visit the photo exhibition Women, Life, Freedom in Telliskivi Creative City at Kolme Puu Galerii. This Mondo Academy event is held in cooperation with Mondo, Iranian Supportive Organization in Estonia and Telliskivi Creative Campus.",
+    location :'Telliskivi 60A/5, Tallinn',
+    link : 'https://www.facebook.com/events/s/mondo-akadeemia-naised-elu-vab/552538913528363/',
+    poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-06march.jpeg?alt=media&token=08bd07a3-cd66-48ed-b2b2-728b71f39ba9',
+    image:
+    []
+    ,type : "Upcoming Events"
+  },
+  {
+    id: 35,
+    date :'08 March 2023',
+    title: "Campus Rally for International Women's Day",
+    description: 'We would like to invite you to a campus rally for Iranian women which is happening in 100+ universities across the globe on the 8th of March from 12:00 to 13:00 in front of the main building of the University of Tartu (Ülikooli 18).',
+    content :'It has been more than 5 months since the start of the 2022 revolution of the people of Iran. After the brutal death of 22-year-old Mahsa Amini by the hands of the Islamic Republic’s “Morality Police”; Iranian people started their revolution against the dictatorship regime. Since the very beginning of the revolution, university, high-school and even elementary school students have been a big part of it. The regime launched a series of brutal attacks in the universities and schools which is against their own law! Many students have been killed, kidnapped, or disappeared. On average, the Islamic republic forces have killed one child (under the age of 18) per day since the start of the revolution. This bloodshed has not been enough for the Islamic Republic and now they executed some of the protesters who have been captured, and they are planning to execute more people! Many of those are students and scholars like us, who simply wish to restore the basic human rights in Iran. We see it as our responsibility to be the voice of our people. Therefore, we invite you to join us and help us in our mission in a globally coordinated Campus Rally for Iranian women on 8th of March from 12:00 to 13:00 in front of the main building of the University of Tartu (Ülikooli 18). We will have a peaceful walk through Raekoja plats- Rüütli street- Lai street to the Delta center and then back to the Raekoja plats through the central park. We especially invite our Ukrainian sisters and brothers to join us in this rally as we are “fighting the same fight”.',
+    location :'University of Tartu',
+    link : 'https://www.facebook.com/events/s/campus-rally-for-the-brave-wom/765391078157933/',
+    poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-08march.jpeg?alt=media&token=03e2f6a3-7863-4456-b6f0-ed72e278dcc9',
+    image:
+    []
+    ,type : "Upcoming Events"
+  },
+  {
+    id: 36,
+    date :'11 March 2023',
+    title: 'Interdisciplinary view of gender violence in the international diaspora',
+    description: "The International Women's Network in Estonia is organizing a series of events during March to commemorate the International Women's Day",
+    content :'What are we talking about when we talk about violence? If we approach violence as a social phenomenon, we would understand that it is created by, and experienced through, different scales of interaction and affectation of multiple dimensions such as cultural, symbolic, psychological and institutional manifestations, not only physical. Our 3 speakers will share their perspectives through the lenses of their professions, activisms and countries of origin.',
+    location :'',
+    link : 'https://www.facebook.com/events/2555588547928510/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A163535233140696%7D%7D]%22%7D',
+    poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-11march.jpeg?alt=media&token=eba3b786-dc3a-4809-8077-6552384f36bc',
+    image:
+    []
+    ,type : "Upcoming Events"
+  },
 ];
 
 export default EventsInfo;
