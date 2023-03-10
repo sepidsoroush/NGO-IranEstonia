@@ -132,7 +132,7 @@ const EventsInfo = [
     title: 'TLU Podcast interview',
     description: 'TLU Podcast interview with one of the members of the campaign.',
     content :'',
-    link : 'https://www.linkedin.com/posts/anitagriesbeck_jinjiyanazadi-humanrights-iranrevolution-activity-6996088049436614656-Tfrx?utm_source=share&utm_medium=member_ios',
+    link : 'https://estonianworld.com/life/podcast-woman-life-freedom-iranian-protests-in-estonia/',
     location :'',
     poster : '' ,
     image: []
