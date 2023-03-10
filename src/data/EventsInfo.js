@@ -479,6 +479,19 @@ const EventsInfo = [
     []
     ,type : "Upcoming Events"
   },
+    {
+    id: 37,
+    date :'11 March 2023',
+    title: 'Condemn mass poisoning of school girls in Iran',
+    description: "Join the global rallies to condemn mass poisoning of school girls in Iran",
+    content :"The poisoning of Iranian schoolgirls is another link in the chain of crimes committed by the Islamic Republic, and another attempt by the Regime to silence the voices of Iranian women and girls. THE IRANIAN SUPPORTIVE ORGANIZATION (ISO) in Estonia and JEF ESTONIA (Young European Federalists) stand in solidarity with the women of Iran and the distressed families to condemn these abhorrent crimes. Cities around the world are joining with the Association of Families of Flight PS752 Victims to show continued support of Iran’s revolution for freedom.",
+    location :'Telliskivi Loomelinnak , Tallinn',
+    link : 'https://www.facebook.com/events/689794036257152/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A582062987191551%7D%7D]%22%7D',
+    poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter2-march11.jpeg?alt=media&token=6482e3d0-f128-4148-a010-78b90bfd143b',
+    image:
+    []
+    ,type : "Upcoming Events"
+  },
 ];
 
 export default EventsInfo;
