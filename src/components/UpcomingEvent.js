@@ -3,10 +3,11 @@ import EventsInfo from '../data/EventsInfo';
 
 
 const UpcomingEvent = () => {
-    const Upcoming = EventsInfo.filter((item) => item.type === "Upcoming Events");  
+    const Upcoming = EventsInfo.filter((item) => item.type === "Upcoming Events");
+    console.log(Upcoming)  
     return (
         <div className='max-w-7xl mx-auto justify-start'>
-            <h1 className=" text-4xl font-semibold pt-20 text-center">Upcoming Events</h1>
+            {Upcoming.length >0 ? <h1 className=" text-4xl font-semibold pt-20 text-center">Upcoming Events</h1> : null}
             <div className='flex flex-nowrap flex-col-reverse '>
                 {Upcoming.map((item)=>{
                 const {id , title , description , poster , link , date} = item;

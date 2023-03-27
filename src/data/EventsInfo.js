@@ -324,7 +324,7 @@ const EventsInfo = [
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter2.jpeg?alt=media&token=9c6141ae-b76c-45ab-9af0-fc5e327f5352',
     image:
     []
-    ,type : "Upcoming Events"
+    ,type : "Past Events"
   },
   {
     id: 25,
@@ -426,7 +426,7 @@ const EventsInfo = [
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-01march.jpeg?alt=media&token=f5590b15-e8d0-4b9e-a296-756ba23c2d89',
     image:
     []
-    ,type : "Upcoming Events"
+    ,type : "Past Events"
   },
   {
     id: 33,
@@ -451,7 +451,7 @@ const EventsInfo = [
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-06march.jpeg?alt=media&token=08bd07a3-cd66-48ed-b2b2-728b71f39ba9',
     image:
     []
-    ,type : "Upcoming Events"
+    ,type : "Past Events"
   },
   {
     id: 35,
@@ -464,7 +464,7 @@ const EventsInfo = [
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-08march.jpeg?alt=media&token=03e2f6a3-7863-4456-b6f0-ed72e278dcc9',
     image:
     []
-    ,type : "Upcoming Events"
+    ,type : "Past Events"
   },
   {
     id: 36,
@@ -477,7 +477,7 @@ const EventsInfo = [
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter-11march.jpeg?alt=media&token=eba3b786-dc3a-4809-8077-6552384f36bc',
     image:
     []
-    ,type : "Upcoming Events"
+    ,type : "Past Events"
   },
     {
     id: 37,
@@ -488,6 +488,19 @@ const EventsInfo = [
     location :'Telliskivi Loomelinnak , Tallinn',
     link : 'https://www.facebook.com/events/689794036257152/?acontext=%7B%22ref%22%3A%2252%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22share_link%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22share_link%5C%22%2C%5C%22extra_data%5C%22%3A%7B%5C%22invite_link_id%5C%22%3A582062987191551%7D%7D]%22%7D',
     poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2Fposter2-march11.jpeg?alt=media&token=6482e3d0-f128-4148-a010-78b90bfd143b',
+    image:
+    []
+    ,type : "Past Events"
+  },
+  {
+    id: 38,
+    date :'01 April 2023',
+    title: 'Persian New Year Nowruz',
+    description: 'Spring has almost arrived and so has the Persian new year Nowruz (new day in Persian) that is celebrated in different countries across Central Asia and Middle East. This year, you will be able to celebrate Nowruz without having to travel! You can just come to event by The Route Diverse and ISO Estonia and the people from the region in their celebration of the new year!',
+    content :'The Iranian Supportive Organization (ISO), International House, and Tartu 2024 are proud to present NOWRUZ 1402, an event that will celebrate the Persian New Year in Tartu, Estonia on Saturday, April 1st, 2023 at 17:00. This event promises to be an unforgettable experience for attendees, filled with a wide variety of activities including traditional Iranian cuisine, cultural performances, live music, and the beloved 4Shanbe soori celebration. The Women, Life, Freedom movement in Iran will be honored at this event, highlighting the importance of the fight for gender equality and freedom. NOWRUZ 1402 offers a unique opportunity for people of all backgrounds to come together and experience the rich and vibrant culture of Iran. The collaborative efforts of these three organizations will ensure that this event is not only entertaining, but also a powerful statement of solidarity and unity in celebrating diversity. Join us in welcoming the new year with open arms, and embracing the beauty of Iranian culture.',
+    location :'Deutsches Kulturinstitut Tartu',
+    link : 'https://www.facebook.com/events/s/parsia-uus-aasta-novruz-persia/630925302376565/',
+    poster : 'https://firebasestorage.googleapis.com/v0/b/isobackend/o/posters%2FPoster-01April.JPG?alt=media&token=a0cd0710-f376-48ed-a8f4-3c826bf6ec51',
     image:
     []
     ,type : "Upcoming Events"
