@@ -11,7 +11,7 @@ const Donate = () => {
     e.preventDefault();
     console.log(paymentData);
     axios
-      .post('http://localhost:8080/payment', paymentData)
+      .post('https://iso-backend.herokuapp.com/payment', paymentData)
       .then((res) => {
         // console.log(res.data.url);
         window.location.href = res.data.url;
