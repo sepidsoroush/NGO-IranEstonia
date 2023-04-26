@@ -14,7 +14,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PaymentSuccess from './pages/success';
 import PaymentUnSuccess from './pages/cancel';
-
+import { Analytics } from '@vercel/analytics/react';
 //update routes
 function App() {
   return (
@@ -35,6 +35,7 @@ function App() {
           <Route path="/cancel" element={<PaymentUnSuccess />} />
         </Routes>
         <Footer />
+        <Analytics />
       </HelmetProvider>
     </div>
   );
